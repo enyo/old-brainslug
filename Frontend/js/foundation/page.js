@@ -63,6 +63,7 @@ console.log(responderClass);
     if (this.firstResponder) this.firstResponder.resignFirstResponder();
     this.element.removeClassName('visible');
     this.element.addClassName('hidden');
+    console.log('hiding ' + this.id);
   },
 
 

@@ -14,7 +14,13 @@ BS.Application = Class.create(BS.Responder, {
     BS.pages.home.show();
   },
 
-  tryToPerform: function(action) {
+  tryToPerform: function(action, context) {
+    switch (action) {
+      case 'showPage':
+        BS.pages[context.page].show();
+        return YES;
+        break;
+    }
     console.log("Action '" + action + "' could not be handled.");
     return NO;
   }

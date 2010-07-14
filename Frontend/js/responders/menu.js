@@ -16,8 +16,25 @@ BS.MenuResponder = Class.create(BS.Responder, {
   },
 
   didBecomeFirstResponder: function() {
-    this.selectNextLink();
+    this.selectFirstLink();
   },
+
+  selectFirstLink: function() {
+    var activeLink = this.element.down('a.active'),
+      nextLink;
+
+    if (activeLink) {
+      this.deactivateLink(activeLink);
+    }
+
+    nextLink = this.element.down('a');
+    if (!nextLink) return NO;
+
+    this.activateLink(nextLink);
+    
+    return YES;
+  },
+
 
   selectNextLink: function() {
     var activeLink = this.element.down('a.active'),
