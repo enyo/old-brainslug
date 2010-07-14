@@ -1,0 +1,858 @@
+TBrainslug
+v7
+r0
+t300798203.187518
+cCheck dependencies
+cProcessInfoPlistFile /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Info.plist Info.plist
+cCopyStringsFile /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+cCompileXIB /Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib
+cCpResource build/Debug/Brainslug.app/Contents/Resources/Background.qtz Background.qtz
+cCpResource build/Debug/Brainslug.app/Contents/Resources/start.html start.html
+cProcessPCH /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch.pth Brainslug_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cDataModelCompile /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/Brainslug_DataModel.mom /Volumes/CaseFS/git/brainslug/Brainslug_DataModel.xcdatamodel
+cCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/main.o /Volumes/CaseFS/git/brainslug/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/MenuView.o /Volumes/CaseFS/git/brainslug/MenuView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/DebugWindowController.o /Volumes/CaseFS/git/brainslug/DebugWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/RegexKitLite.o /Volumes/CaseFS/git/brainslug/RegexKitLite.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController_Movies.o /Volumes/CaseFS/git/brainslug/ImportController_Movies.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/TMDbAccess.o /Volumes/CaseFS/git/brainslug/TMDbAccess.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/TTDbAccess.o /Volumes/CaseFS/git/brainslug/TTDbAccess.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController_TVShows.o /Volumes/CaseFS/git/brainslug/ImportController_TVShows.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController.o /Volumes/CaseFS/git/brainslug/ImportController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/Access.o /Volumes/CaseFS/git/brainslug/Access.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/Brainslug_AppDelegate.o /Volumes/CaseFS/git/brainslug/Brainslug_AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/BrainslugController.o /Volumes/CaseFS/git/brainslug/BrainslugController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/MacOS/Brainslug normal x86_64
+cPhaseScriptExecution "Set Build Version" /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Script-B56C71FD0FED1E30006B8EE6.sh
+cTouch /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app
+
+N/Developer/usr/lib/clang/1.0.2/include/limits.h
+c000000004B56A2F70000000000000DE4
+t1263969015
+s3556
+
+N/Developer/usr/lib/clang/1.0.2/include/stdarg.h
+c000000004B56A2F700000000000007CD
+t1263969015
+s1997
+
+N/Developer/usr/lib/clang/1.0.2/include/stdint.h
+c000000004B56A2F70000000000001C6D
+t1263969015
+s7277
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/CoreFoundation.framework/Headers/CFArray.h
+c000000004A5D68370000000000007AC8
+t1247635511
+s31432
+
+N/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
+c000000004A5D68370000000000003A75
+t1247635511
+s14965
+
+N/System/Library/Frameworks/CoreFoundation.framework/Headers/CFString.h
+c000000004A5D6838000000000000B3BB
+t1247635512
+s46011
+
+N/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h
+c000000004A600B840000000000001C87
+t1247808388
+s7303
+
+N/System/Library/Frameworks/Foundation.framework/Headers/NSDictionary.h
+c000000004A600B850000000000000EA7
+t1247808389
+s3751
+
+N/System/Library/Frameworks/Foundation.framework/Headers/NSError.h
+c000000004A600B850000000000001E48
+t1247808389
+s7752
+
+N/System/Library/Frameworks/Foundation.framework/Headers/NSException.h
+c000000004A600B85000000000000205E
+t1247808389
+s8286
+
+N/System/Library/Frameworks/Foundation.framework/Headers/NSGarbageCollector.h
+c000000004A600B850000000000000CC3
+t1247808389
+s3267
+
+N/System/Library/Frameworks/Foundation.framework/Headers/NSNotification.h
+c000000004A600B8500000000000005AF
+t1247808389
+s1455
+
+N/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h
+c000000004A600B850000000000002016
+t1247808389
+s8214
+
+N/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+c000000004A600B85000000000000049D
+t1247808389
+s1181
+
+N/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h
+c000000004A600B8500000000000008DD
+t1247808389
+s2269
+
+N/System/Library/Frameworks/Foundation.framework/Headers/NSString.h
+c000000004A600B860000000000005F75
+t1247808390
+s24437
+
+N/System/Library/Frameworks/QTKit.framework/Headers/QTKit.h
+c000000004A1503C2000000000000044A
+t1242891202
+s1098
+
+N/System/Library/Frameworks/QTKit.framework/QTKit
+c000000004BF9CAFF00000000006705C0
+t1274661631
+s6751680
+
+N/System/Library/Frameworks/Quartz.framework/Headers/Quartz.h
+c000000004A1249D30000000000000124
+t1242712531
+s292
+
+N/System/Library/Frameworks/Quartz.framework/Quartz
+c000000004A1249D4000000000000A5F0
+t1242712532
+s42480
+
+N/System/Library/Frameworks/WebKit.framework/Headers/WebKit.h
+c000000004A56F75E0000000000000957
+t1247213406
+s2391
+
+N/System/Library/Frameworks/WebKit.framework/WebKit
+c000000004C0C24EF00000000005BB7C0
+t1275864303
+s6010816
+
+N/Volumes/CaseFS/git/brainslug/Access.h
+c000000004AA523FB0000000000000525
+t1252336635
+s1317
+i<Cocoa/Cocoa.h>
+
+N/Volumes/CaseFS/git/brainslug/Access.m
+c000000004AA523FB000000000000082A
+t1252336635
+s2090
+i"Access.h"
+
+N/Volumes/CaseFS/git/brainslug/Background.qtz
+c000000004A4917530000000000007CE3
+t1246304083
+s31971
+
+N/Volumes/CaseFS/git/brainslug/BrainslugController.h
+c000000004C33638E00000000000004EC
+t1278436238
+s1260
+i<Cocoa/Cocoa.h>
+i<WebKit/WebKit.h>
+
+N/Volumes/CaseFS/git/brainslug/BrainslugController.m
+c000000004C33638E00000000000010C3
+t1278436238
+s4291
+i"BrainslugController.h"
+i"MenuView.h"
+i"ImportController_Movies.h"
+i"ImportController_TVShows.h"
+
+N/Volumes/CaseFS/git/brainslug/Brainslug_AppDelegate.h
+c000000004A49381900000000000004D4
+t1246312473
+s1236
+i<Cocoa/Cocoa.h>
+
+N/Volumes/CaseFS/git/brainslug/Brainslug_AppDelegate.m
+c000000004AA523FB0000000000001AD5
+t1252336635
+s6869
+i"Brainslug_AppDelegate.h"
+
+N/Volumes/CaseFS/git/brainslug/Brainslug_DataModel.xcdatamodel
+c000000004C3D99080000000000000088
+t1279105288
+s136
+
+N/Volumes/CaseFS/git/brainslug/Brainslug_Prefix.pch
+c000000004A4938190000000000000336
+t1246312473
+s822
+i<Cocoa/Cocoa.h>
+
+N/Volumes/CaseFS/git/brainslug/DebugWindowController.h
+c000000004A4B3B0E0000000000000505
+t1246444302
+s1285
+i<Cocoa/Cocoa.h>
+
+N/Volumes/CaseFS/git/brainslug/DebugWindowController.m
+c000000004A4BFC2A00000000000015CA
+t1246493738
+s5578
+i"DebugWindowController.h"
+i"BrainslugController.h"
+
+N/Volumes/CaseFS/git/brainslug/English.lproj/InfoPlist.strings
+c000000004A4917530000000000000104
+t1246304083
+s260
+
+N/Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib
+c000000004C33638E000000000005D799
+t1278436238
+s382873
+
+N/Volumes/CaseFS/git/brainslug/ImportController.h
+c000000004A5054570000000000000973
+t1246778455
+s2419
+i<Cocoa/Cocoa.h>
+
+N/Volumes/CaseFS/git/brainslug/ImportController.m
+c000000004A548FAE000000000000132D
+t1247055790
+s4909
+i"ImportController.h"
+i<QTKit/QTKit.h>
+
+N/Volumes/CaseFS/git/brainslug/ImportController_Movies.h
+c000000004A49381900000000000003AF
+t1246312473
+s943
+i"ImportController.h"
+
+N/Volumes/CaseFS/git/brainslug/ImportController_Movies.m
+c000000004A5B7A9D0000000000002C0E
+t1247509149
+s11278
+i"ImportController_Movies.h"
+i"RegexKitLite.h"
+i"TMDbAccess.h"
+
+N/Volumes/CaseFS/git/brainslug/ImportController_TVShows.h
+c000000004A4BFC2A0000000000000419
+t1246493738
+s1049
+i<Cocoa/Cocoa.h>
+i"ImportController.h"
+
+N/Volumes/CaseFS/git/brainslug/ImportController_TVShows.m
+c000000004A5054570000000000002664
+t1246778455
+s9828
+i"ImportController_TVShows.h"
+i"TTDbAccess.h"
+i"RegexKitLite.h"
+
+N/Volumes/CaseFS/git/brainslug/MenuView.h
+c000000004A537A1800000000000004F9
+t1246984728
+s1273
+i<Cocoa/Cocoa.h>
+i<Quartz/Quartz.h>
+
+N/Volumes/CaseFS/git/brainslug/MenuView.m
+c000000004A9ECEAC0000000000002AFE
+t1251921580
+s11006
+i"MenuView.h"
+i<QTKit/QTKit.h>
+
+N/Volumes/CaseFS/git/brainslug/RegexKitLite.h
+c000000004A49175300000000000027D4
+t1246304083
+s10196
+i<Foundation/NSArray.h>
+i<Foundation/NSError.h>
+i<Foundation/NSObjCRuntime.h>
+i<Foundation/NSRange.h>
+i<Foundation/NSString.h>
+i<limits.h>
+i<stdint.h>
+i<sys/types.h>
+i<TargetConditionals.h>
+i<AvailabilityMacros.h>
+
+N/Volumes/CaseFS/git/brainslug/RegexKitLite.m
+c000000004A491753000000000001B17C
+t1246304083
+s110972
+i<CoreFoundation/CFBase.h>
+i<CoreFoundation/CFArray.h>
+i<CoreFoundation/CFString.h>
+i<Foundation/NSArray.h>
+i<Foundation/NSDictionary.h>
+i<Foundation/NSError.h>
+i<Foundation/NSException.h>
+i<Foundation/NSNotification.h>
+i<Foundation/NSRunLoop.h>
+i<Foundation/NSGarbageCollector.h>
+i<objc/runtime.h>
+i<libkern/OSAtomic.h>
+i<mach-o/loader.h>
+i<AvailabilityMacros.h>
+i<dlfcn.h>
+i<string.h>
+i<stdarg.h>
+i<stdlib.h>
+i<stdio.h>
+i"RegexKitLite.h"
+
+N/Volumes/CaseFS/git/brainslug/TMDbAccess.h
+c000000004A4938190000000000000B9F
+t1246312473
+s2975
+i"Access.h"
+
+N/Volumes/CaseFS/git/brainslug/TMDbAccess.m
+c000000004AA523FB0000000000002190
+t1252336635
+s8592
+i"TMDbAccess.h"
+
+N/Volumes/CaseFS/git/brainslug/TTDbAccess.h
+c000000004A4CF361000000000000054A
+t1246557025
+s1354
+i"Access.h"
+
+N/Volumes/CaseFS/git/brainslug/TTDbAccess.m
+c000000004AA5267F0000000000001928
+t1252337279
+s6440
+i"TTDbAccess.h"
+i"RegexKitLite.h"
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/Access.o
+t1279105400
+s14036
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/Brainslug.LinkFileList
+c000000004C3D99730000000000000552
+t1279105395
+s1362
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/BrainslugController.o
+t1279105400
+s35528
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/Brainslug_AppDelegate.o
+t1279105400
+s34008
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/DebugWindowController.o
+t1279105399
+s42416
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController.o
+t1279105400
+s34512
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController_Movies.o
+t1279105400
+s43404
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController_TVShows.o
+t1279105400
+s43212
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/MenuView.o
+t1279105399
+s64440
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/RegexKitLite.o
+t1279105400
+s167044
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/TMDbAccess.o
+t1279105400
+s69380
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/TTDbAccess.o
+t1279105400
+s37144
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/main.o
+t1279105399
+s2208
+
+N/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Script-B56C71FD0FED1E30006B8EE6.sh
+c000000004C3D9973000000000000044E
+t1279105395
+s1102
+
+N/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app
+t1279105403
+s102
+
+N/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Info.plist
+t1279105403
+s840
+
+N/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/MacOS/Brainslug
+t1279105402
+s262688
+
+N/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/PkgInfo
+t1279105395
+s8
+
+N/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/Background.qtz
+t1279105396
+s31971
+
+N/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/Brainslug_DataModel.mom
+t1279105399
+s5367
+
+N/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1279105396
+s260
+
+N/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/English.lproj/MainMenu.nib
+t1279105397
+s76081
+
+N/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/start.html
+t1279105396
+s6
+
+N/Volumes/CaseFS/git/brainslug/main.m
+c000000004A493819000000000000037C
+t1246312473
+s892
+i<Cocoa/Cocoa.h>
+
+N/Volumes/CaseFS/git/brainslug/start.html
+c000000004C3363CC0000000000000006
+t1278436300
+s6
+
+N/usr/include/AvailabilityMacros.h
+c000000004A11A9B30000000000006724
+t1242671539
+s26404
+
+N/usr/include/TargetConditionals.h
+c000000004A11A9B300000000000031E9
+t1242671539
+s12777
+
+N/usr/include/dlfcn.h
+c000000004A73D44F0000000000000B1C
+t1249104975
+s2844
+
+N/usr/include/libkern/OSAtomic.h
+c000000004A5C14A60000000000002519
+t1247548582
+s9497
+
+N/usr/include/mach-o/loader.h
+c000000004A4D4DFA000000000000EF91
+t1246580218
+s61329
+
+N/usr/include/objc/runtime.h
+c000000004A4D51C8000000000000530A
+t1246581192
+s21258
+
+N/usr/include/stdio.h
+c000000004A5C14A70000000000004174
+t1247548583
+s16756
+
+N/usr/include/stdlib.h
+c000000004A5C14A70000000000002DF5
+t1247548583
+s11765
+
+N/usr/include/string.h
+c000000004A5C14A70000000000001731
+t1247548583
+s5937
+
+N/usr/include/sys/types.h
+c000000004A73D6550000000000002905
+t1249105493
+s10501
+
+N/usr/lib/libicucore.dylib
+c000000004BD24B3900000000005EC870
+t1272073017
+s6211696
+
+N/var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch.pth
+t1279105399
+s7434708
+
+NInfo.plist
+c000000004A49D7C2000000000000037F
+t1246353346
+s895
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies300798195#300798195#0(0"0(0#1#0"7947009927035180032#0"0#
+
+CCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/Access.o /Volumes/CaseFS/git/brainslug/Access.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s300798200.403918
+e300798200.472446
+r1
+xCompileC
+xbuild/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/Access.o
+x/Volumes/CaseFS/git/brainslug/Access.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@46"Compile /Volumes/CaseFS/git/brainslug/Access.m300798200#300798200#0(0"0(0#0#38"/Volumes/CaseFS/git/brainslug/Access.m4300911832#1022"    cd /Volumes/CaseFS/git/brainslug    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -fasm-blocks -mfix-and-continue -fobjc-gc-only -gdwarf-2 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug.hmap -F/Volumes/CaseFS/git/brainslug/build/Debug -I/Volumes/CaseFS/git/brainslug/build/Debug/include -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources/x86_64 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources -include /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch -c /Volumes/CaseFS/git/brainslug/Access.m -o /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/Access.o0#
+
+CCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/BrainslugController.o /Volumes/CaseFS/git/brainslug/BrainslugController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s300798200.472556
+e300798200.607727
+r1
+xCompileC
+xbuild/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/BrainslugController.o
+x/Volumes/CaseFS/git/brainslug/BrainslugController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Volumes/CaseFS/git/brainslug/BrainslugController.m:53:49:{53:49-53:116}: warning: method '-managedObjectContext' not found (return type defaults to 'id')
+o         NSManagedObjectContext *managedObjectContext = [[[NSApplication sharedApplication] delegate] managedObjectContext];
+o                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Volumes/CaseFS/git/brainslug/BrainslugController.m:79:49:{79:49-79:116}: warning: method '-managedObjectContext' not found (return type defaults to 'id')
+o         NSManagedObjectContext *managedObjectContext = [[[NSApplication sharedApplication] delegate] managedObjectContext];
+o                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o2 diagnostics generated.
+lSLF07#2@59"Compile /Volumes/CaseFS/git/brainslug/BrainslugController.m300798200#300798200#0(808"/Volumes/CaseFS/git/brainslug/BrainslugController.m:53:49:{53:49-53:116}: warning: method '-managedObjectContext' not found (return type defaults to 'id')         NSManagedObjectContext *managedObjectContext = [[[NSApplication sharedApplication] delegate] managedObjectContext];                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Volumes/CaseFS/git/brainslug/BrainslugController.m:79:49:{79:49-79:116}: warning: method '-managedObjectContext' not found (return type defaults to 'id')         NSManagedObjectContext *managedObjectContext = [[[NSApplication sharedApplication] delegate] managedObjectContext];                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~2(22@71"Method '-managedObjectContext' not found (return type defaults to 'id')300798200#0#155#0(6@51"/Volumes/CaseFS/git/brainslug/BrainslugController.m300129038#53#49#0#0#49"method * not found (return type defaults to 'id')1(6@51"/Volumes/CaseFS/git/brainslug/BrainslugController.m300129038#53#49#53#116#22@71"Method '-managedObjectContext' not found (return type defaults to 'id')300798200#404#155#0(6@51"/Volumes/CaseFS/git/brainslug/BrainslugController.m300129038#79#49#0#0#49"method * not found (return type defaults to 'id')1(6@51"/Volumes/CaseFS/git/brainslug/BrainslugController.m300129038#79#49#79#116#0#0#51"/Volumes/CaseFS/git/brainslug/BrainslugController.m4300911832#1048"    cd /Volumes/CaseFS/git/brainslug    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -fasm-blocks -mfix-and-continue -fobjc-gc-only -gdwarf-2 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug.hmap -F/Volumes/CaseFS/git/brainslug/build/Debug -I/Volumes/CaseFS/git/brainslug/build/Debug/include -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources/x86_64 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources -include /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch -c /Volumes/CaseFS/git/brainslug/BrainslugController.m -o /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/BrainslugController.o0#
+
+CCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/Brainslug_AppDelegate.o /Volumes/CaseFS/git/brainslug/Brainslug_AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s300798200.420325
+e300798200.515103
+r1
+xCompileC
+xbuild/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/Brainslug_AppDelegate.o
+x/Volumes/CaseFS/git/brainslug/Brainslug_AppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Volumes/CaseFS/git/brainslug/Brainslug_AppDelegate.m:75:22: warning: 'createDirectoryAtPath:attributes:' is deprecated [-Wdeprecated-declarations]
+o         [fileManager createDirectoryAtPath:applicationSupportFolder attributes:nil];
+o                      ^
+o1 diagnostic generated.
+lSLF07#2@61"Compile /Volumes/CaseFS/git/brainslug/Brainslug_AppDelegate.m300798200#300798200#0(258"/Volumes/CaseFS/git/brainslug/Brainslug_AppDelegate.m:75:22: warning: 'createDirectoryAtPath:attributes:' is deprecated [-Wdeprecated-declarations]         [fileManager createDirectoryAtPath:applicationSupportFolder attributes:nil];                      ^1(22@77"'createDirectoryAtPath:attributes:' is deprecated [-Wdeprecated-declarations]300798200#0#148#0(6@53"/Volumes/CaseFS/git/brainslug/Brainslug_AppDelegate.m274029435#75#22#0#0#0"0(0#0#53"/Volumes/CaseFS/git/brainslug/Brainslug_AppDelegate.m4300911832#1052"    cd /Volumes/CaseFS/git/brainslug    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -fasm-blocks -mfix-and-continue -fobjc-gc-only -gdwarf-2 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug.hmap -F/Volumes/CaseFS/git/brainslug/build/Debug -I/Volumes/CaseFS/git/brainslug/build/Debug/include -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources/x86_64 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources -include /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch -c /Volumes/CaseFS/git/brainslug/Brainslug_AppDelegate.m -o /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/Brainslug_AppDelegate.o0#
+
+CCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/DebugWindowController.o /Volumes/CaseFS/git/brainslug/DebugWindowController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s300798199.771834
+e300798199.943048
+r1
+xCompileC
+xbuild/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/DebugWindowController.o
+x/Volumes/CaseFS/git/brainslug/DebugWindowController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Volumes/CaseFS/git/brainslug/DebugWindowController.m:36:26:{36:26-36:93}: warning: method '-managedObjectContext' not found (return type defaults to 'id')
+o         _managedObjectContext = [[[NSApplication sharedApplication] delegate] managedObjectContext];
+o                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o1 diagnostic generated.
+lSLF07#2@61"Compile /Volumes/CaseFS/git/brainslug/DebugWindowController.m300798199#300798199#0(359"/Volumes/CaseFS/git/brainslug/DebugWindowController.m:36:26:{36:26-36:93}: warning: method '-managedObjectContext' not found (return type defaults to 'id')         _managedObjectContext = [[[NSApplication sharedApplication] delegate] managedObjectContext];                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1(22@71"Method '-managedObjectContext' not found (return type defaults to 'id')300798199#0#156#0(6@53"/Volumes/CaseFS/git/brainslug/DebugWindowController.m268186538#36#26#0#0#49"method * not found (return type defaults to 'id')1(6@53"/Volumes/CaseFS/git/brainslug/DebugWindowController.m268186538#36#26#36#93#0#0#53"/Volumes/CaseFS/git/brainslug/DebugWindowController.m4300911832#1052"    cd /Volumes/CaseFS/git/brainslug    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -fasm-blocks -mfix-and-continue -fobjc-gc-only -gdwarf-2 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug.hmap -F/Volumes/CaseFS/git/brainslug/build/Debug -I/Volumes/CaseFS/git/brainslug/build/Debug/include -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources/x86_64 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources -include /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch -c /Volumes/CaseFS/git/brainslug/DebugWindowController.m -o /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/DebugWindowController.o0#
+
+CCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController.o /Volumes/CaseFS/git/brainslug/ImportController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s300798200.310626
+e300798200.420213
+r1
+xCompileC
+xbuild/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController.o
+x/Volumes/CaseFS/git/brainslug/ImportController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Volumes/CaseFS/git/brainslug/ImportController.m:32:27:{32:27-32:94}: warning: method '-managedObjectContext' not found (return type defaults to 'id')
+o                 _managedObjectContext = [[[NSApplication sharedApplication] delegate] managedObjectContext];
+o                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o1 diagnostic generated.
+lSLF07#2@56"Compile /Volumes/CaseFS/git/brainslug/ImportController.m300798200#300798200#0(370"/Volumes/CaseFS/git/brainslug/ImportController.m:32:27:{32:27-32:94}: warning: method '-managedObjectContext' not found (return type defaults to 'id')                 _managedObjectContext = [[[NSApplication sharedApplication] delegate] managedObjectContext];                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1(22@71"Method '-managedObjectContext' not found (return type defaults to 'id')300798200#0#151#0(6@48"/Volumes/CaseFS/git/brainslug/ImportController.m268748590#32#27#0#0#49"method * not found (return type defaults to 'id')1(6@48"/Volumes/CaseFS/git/brainslug/ImportController.m268748590#32#27#32#94#0#0#48"/Volumes/CaseFS/git/brainslug/ImportController.m4300911832#1042"    cd /Volumes/CaseFS/git/brainslug    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -fasm-blocks -mfix-and-continue -fobjc-gc-only -gdwarf-2 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug.hmap -F/Volumes/CaseFS/git/brainslug/build/Debug -I/Volumes/CaseFS/git/brainslug/build/Debug/include -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources/x86_64 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources -include /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch -c /Volumes/CaseFS/git/brainslug/ImportController.m -o /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController.o0#
+
+CCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController_Movies.o /Volumes/CaseFS/git/brainslug/ImportController_Movies.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s300798199.943163
+e300798200.064776
+r1
+xCompileC
+xbuild/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController_Movies.o
+x/Volumes/CaseFS/git/brainslug/ImportController_Movies.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@63"Compile /Volumes/CaseFS/git/brainslug/ImportController_Movies.m300798199#300798200#0(0"0(0#0#55"/Volumes/CaseFS/git/brainslug/ImportController_Movies.m4300911832#1056"    cd /Volumes/CaseFS/git/brainslug    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -fasm-blocks -mfix-and-continue -fobjc-gc-only -gdwarf-2 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug.hmap -F/Volumes/CaseFS/git/brainslug/build/Debug -I/Volumes/CaseFS/git/brainslug/build/Debug/include -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources/x86_64 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources -include /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch -c /Volumes/CaseFS/git/brainslug/ImportController_Movies.m -o /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController_Movies.o0#
+
+CCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController_TVShows.o /Volumes/CaseFS/git/brainslug/ImportController_TVShows.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s300798200.286237
+e300798200.403802
+r1
+xCompileC
+xbuild/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController_TVShows.o
+x/Volumes/CaseFS/git/brainslug/ImportController_TVShows.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Volumes/CaseFS/git/brainslug/ImportController_TVShows.m:160:3: warning: Access  may not respond to 'getAllEpisodeInformationForShowID:'
+o                 [ _access getAllEpisodeInformationForShowID: [ infos valueForKey: @"ttdb_id" ] ];
+o                 ^
+o/Volumes/CaseFS/git/brainslug/ImportController_TVShows.m:215:21:{215:21-215:121}: warning: method '-nameForEpisodeNumber:season:show:withInfos:' not found (return type defaults to 'id')
+o                 [ self    addData: [ _access nameForEpisodeNumber: episodeNumber season: seasonNumber show: showName withInfos: infos ] 
+o                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o2 diagnostics generated.
+lSLF07#2@64"Compile /Volumes/CaseFS/git/brainslug/ImportController_TVShows.m300798200#300798200#0(716"/Volumes/CaseFS/git/brainslug/ImportController_TVShows.m:160:3: warning: Access  may not respond to 'getAllEpisodeInformationForShowID:'                 [ _access getAllEpisodeInformationForShowID: [ infos valueForKey: @"ttdb_id" ] ];                 ^/Volumes/CaseFS/git/brainslug/ImportController_TVShows.m:215:21:{215:21-215:121}: warning: method '-nameForEpisodeNumber:season:show:withInfos:' not found (return type defaults to 'id')                 [ self    addData: [ _access nameForEpisodeNumber: episodeNumber season: seasonNumber show: showName withInfos: infos ]                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~2(22@63"Access  may not respond to 'getAllEpisodeInformationForShowID:'300798200#0#137#0(6@56"/Volumes/CaseFS/git/brainslug/ImportController_TVShows.m268471255#160#3#0#0#23"*  may not respond to *0(22@94"Method '-nameForEpisodeNumber:season:show:withInfos:' not found (return type defaults to 'id')300798200#255#186#0(6@56"/Volumes/CaseFS/git/brainslug/ImportController_TVShows.m268471255#215#21#0#0#49"method * not found (return type defaults to 'id')1(6@56"/Volumes/CaseFS/git/brainslug/ImportController_TVShows.m268471255#215#21#215#121#0#0#56"/Volumes/CaseFS/git/brainslug/ImportController_TVShows.m4300911832#1058"    cd /Volumes/CaseFS/git/brainslug    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -fasm-blocks -mfix-and-continue -fobjc-gc-only -gdwarf-2 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug.hmap -F/Volumes/CaseFS/git/brainslug/build/Debug -I/Volumes/CaseFS/git/brainslug/build/Debug/include -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources/x86_64 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources -include /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch -c /Volumes/CaseFS/git/brainslug/ImportController_TVShows.m -o /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/ImportController_TVShows.o0#
+
+CCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/MenuView.o /Volumes/CaseFS/git/brainslug/MenuView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s300798199.578522
+e300798199.868445
+r1
+xCompileC
+xbuild/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/MenuView.o
+x/Volumes/CaseFS/git/brainslug/MenuView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@48"Compile /Volumes/CaseFS/git/brainslug/MenuView.m300798199#300798199#0(0"0(0#0#40"/Volumes/CaseFS/git/brainslug/MenuView.m4300911832#1026"    cd /Volumes/CaseFS/git/brainslug    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -fasm-blocks -mfix-and-continue -fobjc-gc-only -gdwarf-2 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug.hmap -F/Volumes/CaseFS/git/brainslug/build/Debug -I/Volumes/CaseFS/git/brainslug/build/Debug/include -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources/x86_64 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources -include /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch -c /Volumes/CaseFS/git/brainslug/MenuView.m -o /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/MenuView.o0#
+
+CCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/RegexKitLite.o /Volumes/CaseFS/git/brainslug/RegexKitLite.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s300798199.924736
+e300798200.310515
+r1
+xCompileC
+xbuild/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/RegexKitLite.o
+x/Volumes/CaseFS/git/brainslug/RegexKitLite.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:320:93: warning: 'warn_unused_result' attribute only applies to function types
+o static void *(*rkl_realloc)      (RKL_STRONG_REF void **ptr, size_t size, NSUInteger flags) RKL_ALLOC_SIZE_NON_NULL_ARGS_WARN_UNUSED(2,1) = rkl_realloc_first;
+o                                                                                             ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:133:63: note: instantiated from:
+o #define RKL_ALLOC_SIZE_NON_NULL_ARGS_WARN_UNUSED(as, nn, ...) RKL_ATTRIBUTES(warn_unused_result, nonnull(nn, ##__VA_ARGS__))
+o                                                               ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:320:93: note: instantiated from:
+o static void *(*rkl_realloc)      (RKL_STRONG_REF void **ptr, size_t size, NSUInteger flags) RKL_ALLOC_SIZE_NON_NULL_ARGS_WARN_UNUSED(2,1) = rkl_realloc_first;
+o                                                                                             ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:133:78: note: instantiated from:
+o #define RKL_ALLOC_SIZE_NON_NULL_ARGS_WARN_UNUSED(as, nn, ...) RKL_ATTRIBUTES(warn_unused_result, nonnull(nn, ##__VA_ARGS__))
+o                                                                              ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:341:75: warning: 'warn_unused_result' attribute only applies to function types
+o static id(*rkl_CreateStringWithSubstring)      (id string, NSRange range) RKL_NONNULL_ARGS_WARN_UNUSED(1) = rkl_CreateStringWithSubstring_first;
+o                                                                           ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:128:69: note: instantiated from:
+o #define RKL_NONNULL_ARGS_WARN_UNUSED(arg, ...)                      RKL_ATTRIBUTES(warn_unused_result, nonnull(arg, ##__VA_ARGS__))
+o                                                                     ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:341:75: note: instantiated from:
+o static id(*rkl_CreateStringWithSubstring)      (id string, NSRange range) RKL_NONNULL_ARGS_WARN_UNUSED(1) = rkl_CreateStringWithSubstring_first;
+o                                                                           ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:128:84: note: instantiated from:
+o #define RKL_NONNULL_ARGS_WARN_UNUSED(arg, ...)                      RKL_ATTRIBUTES(warn_unused_result, nonnull(arg, ##__VA_ARGS__))
+o                                                                                    ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:355:80: warning: 'warn_unused_result' attribute only applies to function types
+o static id(*rkl_CreateArrayWithObjects)      (void **objects, NSUInteger count) RKL_NONNULL_ARGS_WARN_UNUSED(1) = rkl_CreateArrayWithObjects_first;
+o                                                                                ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:128:69: note: instantiated from:
+o #define RKL_NONNULL_ARGS_WARN_UNUSED(arg, ...)                      RKL_ATTRIBUTES(warn_unused_result, nonnull(arg, ##__VA_ARGS__))
+o                                                                     ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:355:80: note: instantiated from:
+o static id(*rkl_CreateArrayWithObjects)      (void **objects, NSUInteger count) RKL_NONNULL_ARGS_WARN_UNUSED(1) = rkl_CreateArrayWithObjects_first;
+o                                                                                ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:128:84: note: instantiated from:
+o #define RKL_NONNULL_ARGS_WARN_UNUSED(arg, ...)                      RKL_ATTRIBUTES(warn_unused_result, nonnull(arg, ##__VA_ARGS__))
+o                                                                                    ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:362:81: warning: 'warn_unused_result' attribute only applies to function types
+o static id(*rkl_CreateAutoreleasedArray)      (void **objects, NSUInteger count) RKL_NONNULL_ARGS_WARN_UNUSED(1) = rkl_CreateAutoreleasedArray_first;
+o                                                                                 ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:128:69: note: instantiated from:
+o #define RKL_NONNULL_ARGS_WARN_UNUSED(arg, ...)                      RKL_ATTRIBUTES(warn_unused_result, nonnull(arg, ##__VA_ARGS__))
+o                                                                     ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:362:81: note: instantiated from:
+o static id(*rkl_CreateAutoreleasedArray)      (void **objects, NSUInteger count) RKL_NONNULL_ARGS_WARN_UNUSED(1) = rkl_CreateAutoreleasedArray_first;
+o                                                                                 ^
+o/Volumes/CaseFS/git/brainslug/RegexKitLite.m:128:84: note: instantiated from:
+o #define RKL_NONNULL_ARGS_WARN_UNUSED(arg, ...)                      RKL_ATTRIBUTES(warn_unused_result, nonnull(arg, ##__VA_ARGS__))
+o                                                                                    ^
+o4 diagnostics generated.
+lSLF07#2@52"Compile /Volumes/CaseFS/git/brainslug/RegexKitLite.m300798199#300798200#0(4980"/Volumes/CaseFS/git/brainslug/RegexKitLite.m:320:93: warning: 'warn_unused_result' attribute only applies to function types static void *(*rkl_realloc)      (RKL_STRONG_REF void **ptr, size_t size, NSUInteger flags) RKL_ALLOC_SIZE_NON_NULL_ARGS_WARN_UNUSED(2,1) = rkl_realloc_first;                                                                                             ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:133:63: note: instantiated from: #define RKL_ALLOC_SIZE_NON_NULL_ARGS_WARN_UNUSED(as, nn, ...) RKL_ATTRIBUTES(warn_unused_result, nonnull(nn, ##__VA_ARGS__))                                                               ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:320:93: note: instantiated from: static void *(*rkl_realloc)      (RKL_STRONG_REF void **ptr, size_t size, NSUInteger flags) RKL_ALLOC_SIZE_NON_NULL_ARGS_WARN_UNUSED(2,1) = rkl_realloc_first;                                                                                             ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:133:78: note: instantiated from: #define RKL_ALLOC_SIZE_NON_NULL_ARGS_WARN_UNUSED(as, nn, ...) RKL_ATTRIBUTES(warn_unused_result, nonnull(nn, ##__VA_ARGS__))                                                                              ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:341:75: warning: 'warn_unused_result' attribute only applies to function types static id(*rkl_CreateStringWithSubstring)      (id string, NSRange range) RKL_NONNULL_ARGS_WARN_UNUSED(1) = rkl_CreateStringWithSubstring_first;                                                                           ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:128:69: note: instantiated from: #define RKL_NONNULL_ARGS_WARN_UNUSED(arg, ...)                      RKL_ATTRIBUTES(warn_unused_result, nonnull(arg, ##__VA_ARGS__))                                                                     ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:341:75: note: instantiated from: static id(*rkl_CreateStringWithSubstring)      (id string, NSRange range) RKL_NONNULL_ARGS_WARN_UNUSED(1) = rkl_CreateStringWithSubstring_first;                                                                           ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:128:84: note: instantiated from: #define RKL_NONNULL_ARGS_WARN_UNUSED(arg, ...)                      RKL_ATTRIBUTES(warn_unused_result, nonnull(arg, ##__VA_ARGS__))                                                                                    ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:355:80: warning: 'warn_unused_result' attribute only applies to function types static id(*rkl_CreateArrayWithObjects)      (void **objects, NSUInteger count) RKL_NONNULL_ARGS_WARN_UNUSED(1) = rkl_CreateArrayWithObjects_first;                                                                                ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:128:69: note: instantiated from: #define RKL_NONNULL_ARGS_WARN_UNUSED(arg, ...)                      RKL_ATTRIBUTES(warn_unused_result, nonnull(arg, ##__VA_ARGS__))                                                                     ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:355:80: note: instantiated from: static id(*rkl_CreateArrayWithObjects)      (void **objects, NSUInteger count) RKL_NONNULL_ARGS_WARN_UNUSED(1) = rkl_CreateArrayWithObjects_first;                                                                                ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:128:84: note: instantiated from: #define RKL_NONNULL_ARGS_WARN_UNUSED(arg, ...)                      RKL_ATTRIBUTES(warn_unused_result, nonnull(arg, ##__VA_ARGS__))                                                                                    ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:362:81: warning: 'warn_unused_result' attribute only applies to function types static id(*rkl_CreateAutoreleasedArray)      (void **objects, NSUInteger count) RKL_NONNULL_ARGS_WARN_UNUSED(1) = rkl_CreateAutoreleasedArray_first;                                                                                 ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:128:69: note: instantiated from: #define RKL_NONNULL_ARGS_WARN_UNUSED(arg, ...)                      RKL_ATTRIBUTES(warn_unused_result, nonnull(arg, ##__VA_ARGS__))                                                                     ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:362:81: note: instantiated from: static id(*rkl_CreateAutoreleasedArray)      (void **objects, NSUInteger count) RKL_NONNULL_ARGS_WARN_UNUSED(1) = rkl_CreateAutoreleasedArray_first;                                                                                 ^/Volumes/CaseFS/git/brainslug/RegexKitLite.m:128:84: note: instantiated from: #define RKL_NONNULL_ARGS_WARN_UNUSED(arg, ...)                      RKL_ATTRIBUTES(warn_unused_result, nonnull(arg, ##__VA_ARGS__))                                                                                    ^4(22@61"'warn_unused_result' attribute only applies to function types300798199#0#124#3(13@63"Instantiated from: /Volumes/CaseFS/git/brainslug/RegexKitLite.m300798199#379#78#0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#133#63#0#0#18"instantiated from:0(13@63"Instantiated from: /Volumes/CaseFS/git/brainslug/RegexKitLite.m300798199#648#78#0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#320#93#0#0#18"instantiated from:0(13@63"Instantiated from: /Volumes/CaseFS/git/brainslug/RegexKitLite.m300798199#981#78#0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#133#78#0#0#18"instantiated from:0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#320#93#0#0#37"'*' attribute only applies to * types0(22@61"'warn_unused_result' attribute only applies to function types300798199#1265#124#3(13@63"Instantiated from: /Volumes/CaseFS/git/brainslug/RegexKitLite.m300798199#1612#78#0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#128#69#0#0#18"instantiated from:0(13@63"Instantiated from: /Volumes/CaseFS/git/brainslug/RegexKitLite.m300798199#1894#78#0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#341#75#0#0#18"instantiated from:0(13@63"Instantiated from: /Volumes/CaseFS/git/brainslug/RegexKitLite.m300798199#2195#78#0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#128#84#0#0#18"instantiated from:0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#341#75#0#0#37"'*' attribute only applies to * types0(22@61"'warn_unused_result' attribute only applies to function types300798199#2492#124#3(13@63"Instantiated from: /Volumes/CaseFS/git/brainslug/RegexKitLite.m300798199#2846#78#0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#128#69#0#0#18"instantiated from:0(13@63"Instantiated from: /Volumes/CaseFS/git/brainslug/RegexKitLite.m300798199#3128#78#0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#355#80#0#0#18"instantiated from:0(13@63"Instantiated from: /Volumes/CaseFS/git/brainslug/RegexKitLite.m300798199#3436#78#0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#128#84#0#0#18"instantiated from:0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#355#80#0#0#37"'*' attribute only applies to * types0(22@61"'warn_unused_result' attribute only applies to function types300798199#3733#124#3(13@63"Instantiated from: /Volumes/CaseFS/git/brainslug/RegexKitLite.m300798199#4090#78#0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#128#69#0#0#18"instantiated from:0(13@63"Instantiated from: /Volumes/CaseFS/git/brainslug/RegexKitLite.m300798199#4372#78#0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#362#81#0#0#18"instantiated from:0(13@63"Instantiated from: /Volumes/CaseFS/git/brainslug/RegexKitLite.m300798199#4683#78#0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#128#84#0#0#18"instantiated from:0(6@44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m267996883#362#81#0#0#37"'*' attribute only applies to * types0(0#0#44"/Volumes/CaseFS/git/brainslug/RegexKitLite.m4300911832#1034"    cd /Volumes/CaseFS/git/brainslug    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -fasm-blocks -mfix-and-continue -fobjc-gc-only -gdwarf-2 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug.hmap -F/Volumes/CaseFS/git/brainslug/build/Debug -I/Volumes/CaseFS/git/brainslug/build/Debug/include -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources/x86_64 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources -include /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch -c /Volumes/CaseFS/git/brainslug/RegexKitLite.m -o /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/RegexKitLite.o0#
+
+CCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/TMDbAccess.o /Volumes/CaseFS/git/brainslug/TMDbAccess.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s300798200.064889
+e300798200.190062
+r1
+xCompileC
+xbuild/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/TMDbAccess.o
+x/Volumes/CaseFS/git/brainslug/TMDbAccess.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@50"Compile /Volumes/CaseFS/git/brainslug/TMDbAccess.m300798200#300798200#0(0"0(0#0#42"/Volumes/CaseFS/git/brainslug/TMDbAccess.m4300911832#1030"    cd /Volumes/CaseFS/git/brainslug    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -fasm-blocks -mfix-and-continue -fobjc-gc-only -gdwarf-2 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug.hmap -F/Volumes/CaseFS/git/brainslug/build/Debug -I/Volumes/CaseFS/git/brainslug/build/Debug/include -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources/x86_64 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources -include /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch -c /Volumes/CaseFS/git/brainslug/TMDbAccess.m -o /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/TMDbAccess.o0#
+
+CCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/TTDbAccess.o /Volumes/CaseFS/git/brainslug/TTDbAccess.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s300798200.190175
+e300798200.286068
+r1
+xCompileC
+xbuild/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/TTDbAccess.o
+x/Volumes/CaseFS/git/brainslug/TTDbAccess.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Volumes/CaseFS/git/brainslug/TTDbAccess.m:63:19: warning: 'createDirectoryAtPath:attributes:' is deprecated [-Wdeprecated-declarations]
+o         [ defaultManager createDirectoryAtPath: tmpDir attributes: nil ];
+o                          ^
+o/Volumes/CaseFS/git/brainslug/TTDbAccess.m:78:19: warning: 'createDirectoryAtPath:attributes:' is deprecated [-Wdeprecated-declarations]
+o         [ defaultManager createDirectoryAtPath: tmpPath attributes: nil ];
+o                          ^
+o2 diagnostics generated.
+lSLF07#2@50"Compile /Volumes/CaseFS/git/brainslug/TTDbAccess.m300798200#300798200#0(481"/Volumes/CaseFS/git/brainslug/TTDbAccess.m:63:19: warning: 'createDirectoryAtPath:attributes:' is deprecated [-Wdeprecated-declarations]         [ defaultManager createDirectoryAtPath: tmpDir attributes: nil ];                          ^/Volumes/CaseFS/git/brainslug/TTDbAccess.m:78:19: warning: 'createDirectoryAtPath:attributes:' is deprecated [-Wdeprecated-declarations]         [ defaultManager createDirectoryAtPath: tmpPath attributes: nil ];                          ^2(22@77"'createDirectoryAtPath:attributes:' is deprecated [-Wdeprecated-declarations]300798200#0#137#0(6@42"/Volumes/CaseFS/git/brainslug/TTDbAccess.m274030079#63#19#0#0#0"0(22@77"'createDirectoryAtPath:attributes:' is deprecated [-Wdeprecated-declarations]300798200#240#137#0(6@42"/Volumes/CaseFS/git/brainslug/TTDbAccess.m274030079#78#19#0#0#0"0(0#0#42"/Volumes/CaseFS/git/brainslug/TTDbAccess.m4300911832#1030"    cd /Volumes/CaseFS/git/brainslug    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -fasm-blocks -mfix-and-continue -fobjc-gc-only -gdwarf-2 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug.hmap -F/Volumes/CaseFS/git/brainslug/build/Debug -I/Volumes/CaseFS/git/brainslug/build/Debug/include -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources/x86_64 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources -include /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch -c /Volumes/CaseFS/git/brainslug/TTDbAccess.m -o /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/TTDbAccess.o0#
+
+CCompileC build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/main.o /Volumes/CaseFS/git/brainslug/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s300798199.409114
+e300798199.771722
+r1
+xCompileC
+xbuild/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/main.o
+x/Volumes/CaseFS/git/brainslug/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@44"Compile /Volumes/CaseFS/git/brainslug/main.m300798199#300798199#0(0"0(0#0#36"/Volumes/CaseFS/git/brainslug/main.m4300911832#1018"    cd /Volumes/CaseFS/git/brainslug    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -fasm-blocks -mfix-and-continue -fobjc-gc-only -gdwarf-2 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug.hmap -F/Volumes/CaseFS/git/brainslug/build/Debug -I/Volumes/CaseFS/git/brainslug/build/Debug/include -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources/x86_64 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources -include /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch -c /Volumes/CaseFS/git/brainslug/main.m -o /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/main.o0#
+
+CCompileXIB /Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib
+s300798195.655135
+e300798197.969577
+r1
+xCompileXIB
+x/Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib
+o/* com.apple.ibtool.document.warnings */
+o/Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib:866: warning: The image scaling property should not be used with checkboxes.  A checkbox should always appear at the standard size.
+o/Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib:865: warning: The image scaling property should not be used with checkboxes.  A checkbox should always appear at the standard size.
+o/Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib:893: warning: This window's content rectangle does not lie entirely on the screen with the menu bar and may not be completely visible for all screen resolutions and configurations.
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib300798195#300798197#0(657"/* com.apple.ibtool.document.warnings *//Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib:866: warning: The image scaling property should not be used with checkboxes.  A checkbox should always appear at the standard size./Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib:865: warning: The image scaling property should not be used with checkboxes.  A checkbox should always appear at the standard size./Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib:893: warning: This window's content rectangle does not lie entirely on the screen with the menu bar and may not be completely visible for all screen resolutions and configurations.3(22@117"The image scaling property should not be used with checkboxes.  A checkbox should always appear at the standard size.300798197#18446744073709551615#0#0(6@56"/Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib300129038#866#0#866#0#0"0(22@117"The image scaling property should not be used with checkboxes.  A checkbox should always appear at the standard size.300798197#18446744073709551615#0#0(6@56"/Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib300129038#865#0#865#0#0"0(22@166"This window's content rectangle does not lie entirely on the screen with the menu bar and may not be completely visible for all screen resolutions and configurations.300798197#18446744073709551615#0#0(6@56"/Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib300129038#893#0#893#0#0"0(0#0#56"/Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib4300911832#302"    cd /Volumes/CaseFS/git/brainslug    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/English.lproj/MainMenu.nib /Volumes/CaseFS/git/brainslug/English.lproj/MainMenu.xib0#
+
+CCopyStringsFile /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
+s300798195.614736
+e300798196.579253
+r1
+xCopyStringsFile
+x/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings300798195#300798196#0(0"0(0#0#61"/Volumes/CaseFS/git/brainslug/English.lproj/InfoPlist.strings4300911832#350"    cd /Volumes/CaseFS/git/brainslug    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/English.lproj0#
+
+CCpResource build/Debug/Brainslug.app/Contents/Resources/Background.qtz Background.qtz
+s300798196.579399
+e300798196.629375
+r1
+xCpResource
+xbuild/Debug/Brainslug.app/Contents/Resources/Background.qtz
+xBackground.qtz
+lSLF07#2@19"Copy Background.qtz300798196#300798196#0(0"0(0#0#44"/Volumes/CaseFS/git/brainslug/Background.qtz4300911832#305"    cd /Volumes/CaseFS/git/brainslug    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Volumes/CaseFS/git/brainslug/Background.qtz /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources0#
+
+CCpResource build/Debug/Brainslug.app/Contents/Resources/start.html start.html
+s300798196.580596
+e300798196.629572
+r1
+xCpResource
+xbuild/Debug/Brainslug.app/Contents/Resources/start.html
+xstart.html
+lSLF07#2@15"Copy start.html300798196#300798196#0(0"0(0#0#40"/Volumes/CaseFS/git/brainslug/start.html4300911832#301"    cd /Volumes/CaseFS/git/brainslug    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Volumes/CaseFS/git/brainslug/start.html /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources0#
+
+CDataModelCompile /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/Brainslug_DataModel.mom /Volumes/CaseFS/git/brainslug/Brainslug_DataModel.xcdatamodel
+s300798199.296193
+e300798199.578338
+r1
+xDataModelCompile
+x/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/Brainslug_DataModel.mom
+x/Volumes/CaseFS/git/brainslug/Brainslug_DataModel.xcdatamodel
+lSLF07#2@69"Compile /Volumes/CaseFS/git/brainslug/Brainslug_DataModel.xcdatamodel300798199#300798199#0(0"0(0#0#61"/Volumes/CaseFS/git/brainslug/Brainslug_DataModel.xcdatamodel4300911832#226"    cd /Volumes/CaseFS/git/brainslug    /Developer/usr/bin/momc /Volumes/CaseFS/git/brainslug/Brainslug_DataModel.xcdatamodel /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Resources/Brainslug_DataModel.mom0#
+
+CLd /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/MacOS/Brainslug normal x86_64
+s300798200.607834
+e300798202.876812
+r1
+xLd
+x/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/MacOS/Brainslug
+xnormal
+xx86_64
+old: warning: directory '/Volumes/CaseFS/git/brainslug/../../Downloads/zzip stuff/__zzip' following -L not found
+old: warning: directory '/Volumes/CaseFS/git/brainslug/__zzip' following -L not found
+lSLF07#2@85"Link /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/MacOS/Brainslug300798200#300798202#0(197"ld: warning: directory '/Volumes/CaseFS/git/brainslug/../../Downloads/zzip stuff/__zzip' following -L not foundld: warning: directory '/Volumes/CaseFS/git/brainslug/__zzip' following -L not found2(22@98"Directory '/Volumes/CaseFS/git/brainslug/../../Downloads/zzip stuff/__zzip' following -L not found300798200#0#112#0(6@0"300798200#0#0#0#0#0"0(22@71"Directory '/Volumes/CaseFS/git/brainslug/__zzip' following -L not found300798200#112#85#0(6@0"300798200#0#0#0#0#0"0(0#0#0"4300911832#599"    cd /Volumes/CaseFS/git/brainslug    /Developer/usr/bin/clang -arch x86_64 -L/Volumes/CaseFS/git/brainslug/build/Debug "-L/Volumes/CaseFS/git/brainslug/../../Downloads/zzip stuff/__zzip" -L/Volumes/CaseFS/git/brainslug/__zzip -L/Volumes/CaseFS/git/brainslug -F/Volumes/CaseFS/git/brainslug/build/Debug -filelist /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/Brainslug.LinkFileList -framework Cocoa -framework Quartz -licucore -framework QTKit -framework WebKit -o /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/MacOS/Brainslug0#
+
+CPhaseScriptExecution "Set Build Version" /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Script-B56C71FD0FED1E30006B8EE6.sh
+s300798202.877021
+e300798203.181619
+r1
+xPhaseScriptExecution
+xSet Build Version
+x/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Script-B56C71FD0FED1E30006B8EE6.sh
+lSLF07#2@43"Run custom shell script 'Set Build Version'300798202#300798203#0(0"0(0#0#0"4300911832#15613"    cd /Volumes/CaseFS/git/brainslug    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER enyo    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS x86_64    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Volumes/CaseFS/git/brainslug/build    setenv BUILD_ROOT /Volumes/CaseFS/git/brainslug/build    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Volumes/CaseFS/git/brainslug/build/Debug    setenv CACHE_ROOT /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Volumes/CaseFS/git/brainslug/build/Debug    setenv CONFIGURATION_TEMP_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug    setenv CONTENTS_FOLDER_PATH Brainslug.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH x86_64    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources    setenv DERIVED_FILE_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/Brainslug.dst    setenv DWARF_DSYM_FILE_NAME Brainslug.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Volumes/CaseFS/git/brainslug/build/Debug    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH Brainslug.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH Brainslug.app/Contents/MacOS    setenv EXECUTABLE_NAME Brainslug    setenv EXECUTABLE_PATH Brainslug.app/Contents/MacOS/Brainslug    setenv FILE_LIST /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH Brainslug.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Volumes/CaseFS/git/brainslug/build/Debug\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME Brainslug.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE YES    setenv GCC_ENABLE_OBJC_EXCEPTIONS YES    setenv GCC_ENABLE_OBJC_GC required    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_MODEL_TUNING G5    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER Brainslug_Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Volumes/CaseFS/git/brainslug/build/Debug/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH Brainslug.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /tmp/Brainslug.dst/Users/enyo/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER enyo    setenv INSTALL_PATH /Users/enyo/Applications    setenv INSTALL_ROOT /tmp/Brainslug.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH Brainslug.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug-LinkMap-normal-x86_64.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Volumes/CaseFS/git/brainslug/build/Debug\"  \"/Volumes/CaseFS/git/brainslug/../../Downloads/zzip stuff/__zzip\" \"/Volumes/CaseFS/git/brainslug/__zzip\" \"/Volumes/CaseFS/git/brainslug\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_x86_64 /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal/x86_64/Brainslug.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_VERSION_ACTUAL 1064    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0604    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects    setenv OBJECT_FILE_DIR_normal /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Objects-normal    setenv OBJROOT /Volumes/CaseFS/git/brainslug/build    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH Brainslug.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/PkgInfo    setenv PKGINFO_PATH Brainslug.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH Brainslug.app/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH Brainslug.app/Contents/PrivateHeaders    setenv PRODUCT_NAME Brainslug    setenv PRODUCT_SETTINGS_PATH /Volumes/CaseFS/git/brainslug/Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT Brainslug    setenv PROJECT_DERIVED_FILE_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/DerivedSources    setenv PROJECT_DIR /Volumes/CaseFS/git/brainslug    setenv PROJECT_FILE_PATH /Volumes/CaseFS/git/brainslug/Brainslug.xcodeproj    setenv PROJECT_NAME Brainslug    setenv PROJECT_TEMP_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build    setenv PUBLIC_HEADERS_FOLDER_PATH Brainslug.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Volumes/CaseFS/git/brainslug/build/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH Brainslug.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Volumes/CaseFS/git/brainslug/build/Debug/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH Brainslug.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH Brainslug.app/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Volumes/CaseFS/git/brainslug    setenv SRCROOT /Volumes/CaseFS/git/brainslug    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SYMBOL_REPOSITORY_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/SymbolRepositories    setenv SYMROOT /Volumes/CaseFS/git/brainslug/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME Brainslug    setenv TARGET_BUILD_DIR /Volumes/CaseFS/git/brainslug/build/Debug    setenv TARGET_NAME Brainslug    setenv TARGET_TEMP_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build    setenv TEMP_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build    setenv TEMP_FILES_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build    setenv TEMP_FILE_DIR /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build    setenv TEMP_ROOT /Volumes/CaseFS/git/brainslug/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH Brainslug.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER enyo    setenv USER_APPS_DIR /Users/enyo/Applications    setenv USER_LIBRARY_DIR /Users/enyo/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH Brainslug.app/Contents/version.plist    setenv VERSION_INFO_BUILDER enyo    setenv VERSION_INFO_FILE Brainslug_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:Brainslug  PROJECT:Brainslug-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME Brainslug.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0322    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Script-B56C71FD0FED1E30006B8EE6.sh0#
+
+CProcessInfoPlistFile /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Info.plist Info.plist
+s300798195.528395
+e300798195.614592
+r1
+xProcessInfoPlistFile
+x/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist300798195#300798195#0(0"0(0#0#40"/Volumes/CaseFS/git/brainslug/Info.plist28992425119449204#279"    cd /Volumes/CaseFS/git/brainslug    builtin-infoPlistUtility Info.plist -genpkginfo /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app/Contents/Info.plist0#
+
+CProcessPCH /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch.pth Brainslug_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s300798197.970035
+e300798199.296073
+r1
+xProcessPCH
+x/var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch.pth
+xBrainslug_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@31"Precompile Brainslug_Prefix.pch300798197#300798199#0(0"0(0#0#50"/Volumes/CaseFS/git/brainslug/Brainslug_Prefix.pch4300911832#931"    cd /Volumes/CaseFS/git/brainslug    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -fasm-blocks -mfix-and-continue -fobjc-gc-only -gdwarf-2 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/Brainslug.hmap -F/Volumes/CaseFS/git/brainslug/build/Debug -I/Volumes/CaseFS/git/brainslug/build/Debug/include -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources/x86_64 -I/Volumes/CaseFS/git/brainslug/build/Brainslug.build/Debug/Brainslug.build/DerivedSources -c /Volumes/CaseFS/git/brainslug/Brainslug_Prefix.pch -o /var/folders/S+/S+SAwURWFJWwBa-fQVjBk++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Brainslug_Prefix-axtagujfuvvitgdxjshxeljatwwl/Brainslug_Prefix.pch.pth0#
+
+CTouch /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app
+s300798203.181801
+e300798203.187428
+r1
+xTouch
+x/Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app
+lSLF07#2@61"Touch /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app300798203#300798203#0(0"0(0#0#0"4300911832#115"    cd /Volumes/CaseFS/git/brainslug    /usr/bin/touch -c /Volumes/CaseFS/git/brainslug/build/Debug/Brainslug.app0#
+
