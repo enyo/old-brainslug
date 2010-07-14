@@ -6,11 +6,6 @@ BS.Page = Class.create(BS.Responder, BS.ResponderContext, {
   /** Walk like a duck */
   isPage: true,
 
-  nextResponder: null,
-
-  defaultResponder: null,
-
-
   initialize: function($super) {
 
     $super();

@@ -11,6 +11,12 @@ BS.MenuResponder = Class.create(BS.Responder, {
       case 'keyLeft':
         return this.selectPreviousLink();
         break;
+      case 'keyEnter':
+        if (this.activeLink) {
+          eval(this.activeLink.readAttribute('_action'));
+          return YES;
+        }
+        break;
     }
     return NO;
   },
@@ -19,72 +25,71 @@ BS.MenuResponder = Class.create(BS.Responder, {
     this.selectFirstLink();
   },
 
+
   selectFirstLink: function() {
-    var activeLink = this.element.down('a.active'),
-      nextLink;
-
-    if (activeLink) {
-      this.deactivateLink(activeLink);
-    }
-
-    nextLink = this.element.down('a');
-    if (!nextLink) return NO;
-
-    this.activateLink(nextLink);
-    
-    return YES;
+    this.deactivateActiveLink();
+    return this.activateLink(this.element.down('a'));
   },
 
 
   selectNextLink: function() {
-    var activeLink = this.element.down('a.active'),
+    var activeLink = this.activeLink,
       nextLink;
+
 
     if (activeLink) {
       nextLink = activeLink.next('a');
-      this.deactivateLink(activeLink);
     }
-
     if (!nextLink) {
       nextLink = this.element.down('a');
-      if (!nextLink) return NO;
     }
 
-    this.activateLink(nextLink);
-    
-    return YES;
+    if (this.activateLink(nextLink)) {
+      this.deactivateLink(activeLink);
+      return YES;
+    }
+
+    return NO;
   },
 
   selectPreviousLink: function() {
-    var activeLink = this.element.down('a.active'),
+    var activeLink = this.activeLink,
       previousLink;
+
 
     if (activeLink) {
       previousLink = activeLink.previous('a');
     }
-
     if (!previousLink) {
       previousLink = this.element.select('a').last();
-      if (!previousLink) return NO;
     }
 
-    this.activateLink(previousLink);
-    this.deactivateLink(activeLink);
+    if (this.activateLink(previousLink)) {
+      this.deactivateLink(activeLink);
+      this.activeLink = previousLink;
+      return YES;
+    }
 
-    
-    return YES;
+    return NO;
+
   },
 
 
 
   activateLink: function(element) {
+    if (!element) return NO;
+    this.activeLink = element;
     element.addClassName('active');
+    return YES;
   },
   deactivateLink: function(element) {
+    if (!element) return NO;
     element.removeClassName('active');
+    return YES;
   },
 
   deactivateActiveLink: function() {
+    this.deactivateLink(this.activeLink);
   }
 
 
