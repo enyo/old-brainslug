@@ -2,8 +2,14 @@
  // Global Brainslug namespace.
 var BS = {
   pages: [],
+
   pagesToBuild: [],
-  currentPage: null
+
+  currentPage: null,
+
+  sendAction: function(action, context) {
+    if (this.currentPage && this.currentPage.sendAction) this.currentPage.sendAction(action, context);
+  }
 };
 
 
@@ -16,9 +22,6 @@ var bs_require = function() { };
 
 
 document.observe('dom:loaded', function() {
-  BS.pagesToBuild.each(function(Page) {
-    var page = new Page();
-    BS.pages[page.id] = page;
-  });
-  BS.pages.home.show();
+  BS.application = new BS.Application();
+  BS.application.setupPages();
 });

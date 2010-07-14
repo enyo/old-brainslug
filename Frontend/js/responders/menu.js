@@ -3,16 +3,19 @@ bs_require('foundation/responder');
 
 BS.MenuResponder = Class.create(BS.Responder, {
 
-
   tryToPerform: function(action) {
     switch(action) {
       case 'keyRight':
         return this.selectNextLink();
         break;
+      case 'keyLeft':
+        return this.selectPreviousLink();
+        break;
     }
+    return NO;
   },
 
-  focus: function() {
+  didBecomeFirstResponder: function() {
     this.selectNextLink();
   },
 
@@ -22,7 +25,7 @@ BS.MenuResponder = Class.create(BS.Responder, {
 
     if (activeLink) {
       nextLink = activeLink.next('a');
-      activeLink.removeClassName('active');
+      this.deactivateLink(activeLink);
     }
 
     if (!nextLink) {
@@ -30,9 +33,42 @@ BS.MenuResponder = Class.create(BS.Responder, {
       if (!nextLink) return NO;
     }
 
-    nextLink.addClassName('active');
+    this.activateLink(nextLink);
     
     return YES;
+  },
+
+  selectPreviousLink: function() {
+    var activeLink = this.element.down('a.active'),
+      previousLink;
+
+    if (activeLink) {
+      previousLink = activeLink.previous('a');
+    }
+
+    if (!previousLink) {
+      previousLink = this.element.select('a').last();
+      if (!previousLink) return NO;
+    }
+
+    this.activateLink(previousLink);
+    this.deactivateLink(activeLink);
+
+    
+    return YES;
+  },
+
+
+
+  activateLink: function(element) {
+    element.addClassName('active');
+  },
+  deactivateLink: function(element) {
+    element.removeClassName('active');
+  },
+
+  deactivateActiveLink: function() {
   }
+
 
 })

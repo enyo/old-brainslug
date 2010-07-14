@@ -3,13 +3,16 @@ bs_require('system/object');
 
 BS.Responder = Class.create(BS.Object, {
 
-  initialize: function(element) {
-    this.element = element;
+
+  /** Walk like a duck */
+  isResponder: YES,
+
+  initialize: function() {
+    this.nextResponder = null;
   },
 
-
   /**
-   * If you can perform an action, return YES here.
+   * If you can handle an action, return YES here, otherwise, no.
    */
   tryToPerform: function(action) {
     return NO;
@@ -18,6 +21,20 @@ BS.Responder = Class.create(BS.Object, {
 
   focus: function() {
     
-  }
+  },
 
-})
+  getNextResponder: function() {
+    return this.nextResponder;
+  },
+
+  becomeFirstResponder: function() {
+    this.page.makeFirstResponder(this);
+  },
+
+  resignFirstResponder: function() {
+    BS.firstResponder = null;
+  },
+
+  didBecomeFirstResponder: function() { }
+
+});

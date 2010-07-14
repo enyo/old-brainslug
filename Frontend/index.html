@@ -13,6 +13,7 @@
   <script src="js/system/object.js"></script>
   <script src="js/foundation/responder_context.js"></script>
   <script src="js/foundation/responder.js"></script>
+  <script src="js/foundation/application.js"></script>
   <script src="js/foundation/page.js"></script>
   <script src="js/views/view.js"></script>
   <script src="js/pages/home.js"></script>
@@ -24,14 +25,14 @@
 <div id="container">
 
   <div id="movies" class="page hidden">
-    <div class="_responder" _responderClass="Menu">
+    <div class="_responder" _responderClass="MenuResponder">
       <a class="home" href="javascript:$('movies').addClassName('hidden');$('landing-page').removeClassName('hidden'); undefined;">Home</a>
     </div>
   </div>
 
 
   <div id="home" class="page hidden">
-    <div id="main-menu" class="_responder" _responderClass="Menu">
+    <div id="main-menu" class="_responder" _responderClass="MenuResponder">
         <a class="home" href="javascript:undefined;">Home</a>
         <a class="movies" href="javascript:$('movies').removeClassName('hidden');$('landing-page').addClassName('hidden'); undefined;">Movies</a>
         <a class="tv-shows" href="javascript:undefined;">TV-Shows</a>

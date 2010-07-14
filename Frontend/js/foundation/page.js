@@ -1,32 +1,46 @@
 
 bs_require('foundation/responder');
 
-BS.Page = Class.create(BS.ResponderContext, {
+BS.Page = Class.create(BS.Responder, BS.ResponderContext, {
+
+  /** Walk like a duck */
+  isPage: true,
+
+  nextResponder: null,
+
+  defaultResponder: null,
+
 
   initialize: function($super) {
 
     $super();
 
+    this.nextResponder = BS.application;
+
     this.element = $(this.id);
+
     this.element.select('._responder').each(function(responderElement) {
-      var rank = responderElement.readAttribute('_responderRank'),
-        responderClass = responderElement.readAttribute('_responderClass');;
-      if (!rank) rank = 0;
+
+      var responderClass = responderElement.readAttribute('_responderClass');;
+
       if (!responderClass) responderClass = 'Responder';
-      else responderClass = responderClass + 'Responder';
+
+      if (!BS[responderClass]) throw ('Unknown responder class "' + responderClass + '"');
+
 console.log(responderClass);
-      if (this.responderChain[rank]) throw "You specified the same responder rank twice!";
 
-      this.responderChain[rank] = new BS[responderClass](responderElement);
+      responderElement._responder = new BS[responderClass]();
+      responderElement._responder.element = responderElement;
+      responderElement._responder.page = this;
+      responderElement._responder.nextResponder = this;
+
     }, this);
-
-    if (this.responderChain.size() === 0) throw ('You forgot to define a responder in element "' + this.id + '"!');
-
-    this.responderChain.first().focus();
 
   },
 
   show: function() {
+    var firstResponderElement;
+
     if (BS.currentPage) { 
       if (BS.currentPage == this) return; // Already visible
       BS.currentPage.hide();
@@ -36,14 +50,25 @@ console.log(responderClass);
 
     this.element.removeClassName('hidden');
     this.element.addClassName('visible');
+
+
+    firstResponderElement = this.element.down('._defaultResponder') || this.element.down('._responder');
+    if (firstResponderElement) firstResponderElement._responder.becomeFirstResponder();
   },
-  
+
   hide: function() {
     // Normally BS.currentPage should never be null, because there's always a page showing.
     // This is just to test if nothing shows, if, maybe, some page has been hidden, without another page showing.
     BS.currentPage = null;
+    if (this.firstResponder) this.firstResponder.resignFirstResponder();
     this.element.removeClassName('visible');
     this.element.addClassName('hidden');
+  },
+
+
+  makeFirstResponder: function(responder) {
+    this.defaultResponder = responder;
+    responder.didBecomeFirstResponder();
   }
   
 });
