@@ -1,0 +1,56 @@
+
+body {
+  background: black;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-family: arial, tahoma, verdana, sans-serif;
+  overflow: hidden;
+}
+body, a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+
+.sc-main {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#666), to(#444));
+}
+
+
+#loading {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#666), to(#444));
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+
+  .loading {
+    display: none;
+  }
+
+  p {
+    -webkit-animation-name: brainslug;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+
+    position: absolute;
+    width: 193px;
+    height: 270px;
+    left: 50%;
+    top: 50%;
+    margin-left: -1 * 194px / 2;
+    margin-top: -1 * 270px / 2;
+    background: static_url("images/brainslug.png") no-repeat top left;
+  }
+}
+
+
+
+.sc-button-view {
+  border: none;
+}

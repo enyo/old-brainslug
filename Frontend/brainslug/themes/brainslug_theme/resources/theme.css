@@ -1,0 +1,62 @@
+.sc-main {
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dddddd), to(#bbbbbb));
+opacity: 1;
+z-index: 100;
+-webkit-transition: opacity 0.5s ease-out, z-index 0.5s ease-out;
+}
+.sc-main.inactive {
+opacity: 0;
+z-index: 1;
+}
+
+.sc-main.home .main-menu { border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+.sc-main.home .main-menu .menu-button label {
+font-size: 40px;
+line-height: 40px;
+height: 100%;
+vertical-align: baseline;
+white-space: nowrap;
+text-align: center;
+color: rgba(255, 255, 255, 0.2);
+-webkit-transition: font-size 0.1s ease-out, color 1s ease-out;
+}
+.sc-main.home .main-menu .menu-button.focus label {
+font-size: 50px;
+color: #ffffff;
+}
+
+body {
+background: black;
+padding: 0;
+margin: 0;
+font-size: 30px;
+font-family: arial, tahoma, verdana, sans-serif;
+overflow: hidden;
+}
+body, a { color: rgba(255, 255, 255, 0.85); }
+.sc-main { background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#666666), to(#444444)); }
+#loading {
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#666666), to(#444444));
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+}
+#loading .loading { display: none; }
+#loading p {
+-webkit-animation-name: brainslug;
+-webkit-animation-duration: 3s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-in-out;
+position: absolute;
+width: 193px;
+height: 270px;
+left: 50%;
+top: 50%;
+margin-left: -97px;
+margin-top: -135px;
+background: static_url("images/1.png") no-repeat top left;
+}
+.sc-button-view { border: none; }
+
