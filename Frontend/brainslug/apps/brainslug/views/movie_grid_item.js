@@ -28,12 +28,12 @@ Brainslug.MovieGridItemView = SC.View.extend(
   classNames: 'movie',
 
   label: SC.LabelView.design({
-    layout: { top: 0, height: 20, right: 0, left: 0 },
+    layout: { top: 0, height: 20, right: 0, centerX: 0 },
     valueBinding: '.parentView.content.name'
   }),
   
   image: SC.ImageView.design({
-    layout: { top: 20, centerX: 0, width: 130, height: 170 },
+    layout: { top: 20, centerX: 0, height: 160 },
     valueBinding: '.parentView.content.coverUrl'
   })
   

@@ -9,6 +9,11 @@ opacity: 0;
 z-index: 1;
 }
 
+.sc-main.movies .movie.sel {
+-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+background: rgba(255, 255, 255, 0.2);
+}
+
 .sc-main.home .main-menu { border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 .sc-main.home .main-menu .menu-button label {
 font-size: 40px;
@@ -60,9 +65,3 @@ background: static_url("images/1.png") no-repeat top left;
 }
 .sc-button-view { border: none; }
 
-
-
-
-.sc-main.movies .movie.sel {
-    background: rgba(255, 255, 255, 0.1);
-  }
