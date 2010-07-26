@@ -6,6 +6,7 @@
 
 
 require("panes/main");
+require("views/movie_grid_item");
 
 
 // This page describes the main user interface for your application.  
@@ -55,12 +56,25 @@ Brainslug.mainPage = SC.Page.design({
 
     classNames: 'movies'.w(),
 
-    childViews: 'homeButton'.w(),
-    
+    childViews: 'homeButton movieList'.w(),
+
+
     homeButton: Brainslug.MenuButtonView.design({
-      layout: { centerY: 0, height: 50, width: 300, centerX: 0 },
+      layout: { top: 10, height: 50, width: 300, centerX: 0 },
       title: 'Movies | Home',
       action: 'showHome'
+    }),
+
+    movieList: SC.GridView.design({
+      layout: { top: 100, left: 20, right: 20, bottom: 40 },
+
+      rowHeight: 180,
+      columnWidth: 150,
+
+      contentBinding: 'Brainslug.moviesController.arrangedObjects',
+      selectionBinding: 'Brainslug.moviesController.selection',
+      
+      exampleView: Brainslug.MovieGridItemView
     }),
 
     /**

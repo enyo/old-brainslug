@@ -60,3 +60,9 @@ background: static_url("images/1.png") no-repeat top left;
 }
 .sc-button-view { border: none; }
 
+
+
+
+.sc-main.movies .movie.sel {
+    background: rgba(255, 255, 255, 0.1);
+  }
