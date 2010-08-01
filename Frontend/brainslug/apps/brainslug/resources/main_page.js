@@ -78,10 +78,10 @@ Brainslug.mainPage = SC.Page.design({
     }),
 
     /**
-      The first time the pane gets created, the movies button should become the first responder
+      The first time the pane gets created, the movie list should become the first responder
     */
     didCreateLayer: function() {
-      this.getPath('homeButton').becomeFirstResponder();
+      this.getPath('movieList').becomeFirstResponder();
     }
 
   }),
@@ -92,19 +92,32 @@ Brainslug.mainPage = SC.Page.design({
 
     classNames: 'tv-shows'.w(),
 
-    childViews: 'homeButton'.w(),
+    childViews: 'homeButton tvShowList'.w(),
     
     homeButton: Brainslug.MenuButtonView.design({
-      layout: { centerY: 0, height: 50, width: 300, centerX: 0 },
+      layout: { top: 0, height: 50, width: 300, centerX: 0 },
       title: 'TV Shows | Home',
       action: 'showHome'
     }),
 
+
+    tvShowList: SC.GridView.design({
+      layout: { top: 100, left: 20, right: 20, bottom: 40 },
+
+      rowHeight: 150,
+      columnWidth: 150,
+
+      contentBinding: 'Brainslug.tvShowsController.arrangedObjects',
+      selectionBinding: 'Brainslug.tvShowsController.selection',
+      
+      exampleView: Brainslug.TvShowGridItemView
+    }),
+
     /**
-      The first time the pane gets created, the movies button should become the first responder
+      The first time the pane gets created, the movie list should become the first responder
     */
     didCreateLayer: function() {
-      this.getPath('homeButton').becomeFirstResponder();
+      this.getPath('tvShowList').becomeFirstResponder();
     }
 
   })
