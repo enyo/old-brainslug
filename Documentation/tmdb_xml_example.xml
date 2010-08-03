@@ -1,0 +1,90 @@
+<movie>
+      <popularity>11</popularity>
+      <name>Fight Club</name>
+      <alternative_name></alternative_name>
+      <type>movie</type>
+      <id>550</id>
+      <imdb_id>tt0137523</imdb_id>
+      <url>http://www.themoviedb.org/movie/550</url>
+      <overview>A lonely, isolated thirty-something young professional seeks an escape from his mundane existence with the help of a devious soap salesman. They find their release from the prison of reality through underground fight clubs, where men can be what the world now denies them. Their boxing matches and harmless pranks soon lead to an out-of-control spiral towards oblivion.</overview>
+      <rating>8.59459</rating>
+      <released>1999-09-16</released>
+      <runtime>138</runtime>
+      <budget>63000000</budget>
+      <revenue>100853753</revenue>
+      <homepage>http://www.foxmovies.com/fightclub/</homepage>
+      <trailer>http://www.youtube.com/watch?v=2QgFWXLN-ug</trailer>
+      <categories>
+        <category type="genre" url="http://themoviedb.org/encyclopedia/category/80" name="Crime"></category>
+        <category type="genre" url="http://themoviedb.org/encyclopedia/category/18" name="Drama"></category>
+        <category type="genre" url="http://themoviedb.org/encyclopedia/category/53" name="Thriller"></category>
+      </categories>
+      <studios>
+        <studio url="http://www.themoviedb.org/encyclopedia/company/276" name="News Corporation"></studio>
+        <studio url="http://www.themoviedb.org/encyclopedia/company/277" name="Fox Entertainment Group"></studio>
+        <studio url="http://www.themoviedb.org/encyclopedia/company/36" name="20th Century Fox"></studio>
+      </studios>
+      <countries>
+        <country code="DE" url="http://www.themoviedb.org/encyclopedia/country/55" name="Germany"></country>
+        <country code="US" url="http://www.themoviedb.org/encyclopedia/country/223" name="United States of America"></country>
+      </countries>
+      <images>
+        <image type="poster" url="http://images.themoviedb.org/posters/19078/Fight-Club_46069fd5.jpg" size="original" id="19078"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/19078/Fight-Club_46069fd5_cover.jpg" size="cover" id="19078"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/19078/Fight-Club_46069fd5_thumb.jpg" size="thumb" id="19078"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/19078/Fight-Club_46069fd5_mid.jpg" size="mid" id="19078"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/18498/Fight_Club_v1.jpg" size="original" id="18498"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/18498/Fight_Club_v1_cover.jpg" size="cover" id="18498"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/18498/Fight_Club_v1_thumb.jpg" size="thumb" id="18498"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/18498/Fight_Club_v1_mid.jpg" size="mid" id="18498"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/17066/Fight_Club.jpg" size="original" id="17066"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/17066/Fight_Club_thumb.jpg" size="thumb" id="17066"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/17066/Fight_Club_cover.jpg" size="cover" id="17066"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/17066/Fight_Club_mid.jpg" size="mid" id="17066"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/4861/Fight_Club.jpg" size="original" id="4861"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/4861/Fight_Club_cover.jpg" size="cover" id="4861"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/4861/Fight_Club_mid.jpg" size="mid" id="4861"></image>
+        <image type="poster" url="http://images.themoviedb.org/posters/4861/Fight_Club_thumb.jpg" size="thumb" id="4861"></image>
+        <image type="backdrop" url="http://images.themoviedb.org/backdrops/44588/fightclubcig.jpg" size="original" id="44588"></image>
+        <image type="backdrop" url="http://images.themoviedb.org/backdrops/44588/fightclubcig_poster.jpg" size="poster" id="44588"></image>
+        <image type="backdrop" url="http://images.themoviedb.org/backdrops/44588/fightclubcig_thumb.jpg" size="thumb" id="44588"></image>
+        <image type="backdrop" url="http://images.themoviedb.org/backdrops/22733/fightclub.jpg" size="original" id="22733"></image>
+        <image type="backdrop" url="http://images.themoviedb.org/backdrops/22733/fightclub_thumb.jpg" size="thumb" id="22733"></image>
+        <image type="backdrop" url="http://images.themoviedb.org/backdrops/22733/fightclub_poster.jpg" size="poster" id="22733"></image>
+        <image type="backdrop" url="http://images.themoviedb.org/backdrops/18593/Fight_Club_on_the_street1.jpg" size="original" id="18593"></image>
+        <image type="backdrop" url="http://images.themoviedb.org/backdrops/18593/Fight_Club_on_the_street1_poster.jpg" size="poster" id="18593"></image>
+        <image type="backdrop" url="http://images.themoviedb.org/backdrops/18593/Fight_Club_on_the_street1_thumb.jpg" size="thumb" id="18593"></image>
+        <image type="backdrop" url="http://images.themoviedb.org/backdrops/18575/Fight_Club.jpg" size="original" id="18575"></image>
+        <image type="backdrop" url="http://images.themoviedb.org/backdrops/18575/Fight_Club_thumb.jpg" size="thumb" id="18575"></image>
+        <image type="backdrop" url="http://images.themoviedb.org/backdrops/18575/Fight_Club_poster.jpg" size="poster" id="18575"></image>
+      </images>
+      <cast>
+        <person url="http://www.themoviedb.org/person/7467" job="Director" name="David Fincher" character=""></person>
+        <person url="http://www.themoviedb.org/person/7468" job="Author" name="Chuck Palahniuk" character=""></person>
+        <person url="http://www.themoviedb.org/person/7469" job="Author" name="Jim Uhls" character=""></person>
+        <person url="http://www.themoviedb.org/person/7474" job="Producer" name="Ross Grayson Bell" character=""></person>
+        <person url="http://www.themoviedb.org/person/7475" job="Producer" name="Ceán Chaffin" character=""></person>
+        <person url="http://www.themoviedb.org/person/1254" job="Producer" name="Art Linson" character=""></person>
+        <person url="http://www.themoviedb.org/person/7476" job="Producer" name="David Britten Prior" character=""></person>
+        <person url="http://www.themoviedb.org/person/7477" job="Original Music Composer" name="John King" character=""></person>
+        <person url="http://www.themoviedb.org/person/7478" job="Original Music Composer" name="Michael Simpson" character=""></person>
+        <person url="http://www.themoviedb.org/person/7479" job="Director of Photography" name="Jeff Cronenweth" character=""></person>
+        <person url="http://www.themoviedb.org/person/7480" job="Editor" name="James Haygood" character=""></person>
+        <person url="http://www.themoviedb.org/person/7481" job="Casting" name="Laray Mayfield" character=""></person>
+        <person url="http://www.themoviedb.org/person/1303" job="Production Design" name="Alex McDowell" character=""></person>
+        <person url="http://www.themoviedb.org/person/7763" job="Sound Editor" name="Ren Klyce" character=""></person>
+        <person url="http://www.themoviedb.org/person/7764" job="Sound Editor" name="Richard Hymns" character=""></person>
+        <person url="http://www.themoviedb.org/person/819" job="Actor" name="Edward Norton" character="Narrator"></person>
+        <person url="http://www.themoviedb.org/person/287" job="Actor" name="Brad Pitt" character="Tyler Durden"></person>
+        <person url="http://www.themoviedb.org/person/1283" job="Actor" name="Helena Bonham Carter" character="Marla Singer"></person>
+        <person url="http://www.themoviedb.org/person/7470" job="Actor" name="Meat Loaf" character="Robert 'Bob' Paulson"></person>
+        <person url="http://www.themoviedb.org/person/7471" job="Actor" name="Zach Grenier" character="Richard Chesler"></person>
+        <person url="http://www.themoviedb.org/person/7472" job="Actor" name="Richmond Arquette" character="Intern"></person>
+        <person url="http://www.themoviedb.org/person/7219" job="Actor" name="David Andrews" character="Thomas"></person>
+        <person url="http://www.themoviedb.org/person/7473" job="Actor" name="Rachel Singer" character="Chloe"></person>
+        <person url="http://www.themoviedb.org/person/7497" job="Actor" name="Holt McCallany" character="The Mechanic"></person>
+        <person url="http://www.themoviedb.org/person/7498" job="Actor" name="Eion Bailey" character="Ricky"></person>
+        <person url="http://www.themoviedb.org/person/7499" job="Actor" name="Jared Leto" character="Angel Face"></person>
+        <person url="http://www.themoviedb.org/person/7500" job="Actor" name="Peter Iacangelo" character="Lou"></person>
+      </cast>
+    </movie>

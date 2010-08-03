@@ -1,18 +1,18 @@
 // ==========================================================================
-// Project:   Brainslug.Movie
+// Project:   Brainslug.TvShow
 // Copyright: ©2010 My Company, Inc.
 // ==========================================================================
 /*globals Brainslug */
 
 /** @class
 
-  A Movie model.
+  A TV show model.
 
   @extends SC.Record
   @version 0.1
 */
-Brainslug.Movie = SC.Record.extend(
-/** @scope Brainslug.Movie.prototype */ {
+Brainslug.TvShow = SC.Record.extend(
+/** @scope Brainslug.TvShow.prototype */ {
 
   primaryKey: 'id',
 
@@ -23,11 +23,20 @@ Brainslug.Movie = SC.Record.extend(
 
   name: SC.Record.attr(String, { isRequired: YES }),
 
-  coverUrl: SC.Record.attr(String, { isRequired: YES })
+  coverUrl: SC.Record.attr(String, { isRequired: YES }),
+
+  seasons: SC.Record.toMany("Brainslug.Season", { 
+    inverse: "tvShow", isMaster: YES 
+  }),
+
+  episodes: SC.Record.toMany("Brainslug.Episode", { 
+    inverse: "tvShow", isMaster: YES 
+  })
+
 
 }) ;
 
 
-Brainslug.ALL_MOVIES_QUERY = SC.Query.local(Brainslug.Movie, {
-  recordType: Brainslug.Movie
+Brainslug.ALL_TV_SHOWS_QUERY = SC.Query.local(Brainslug.TvShow, {
+  recordType: Brainslug.TvShow
 });

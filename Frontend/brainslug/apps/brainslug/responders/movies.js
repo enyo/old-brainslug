@@ -4,6 +4,8 @@
 // ==========================================================================
 /*globals Brainslug */
 
+require("models/movie")
+
 /** @namespace
 
   The movies responder
