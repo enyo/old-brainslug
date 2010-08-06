@@ -13,6 +13,7 @@
 Brainslug.TvShowGridItemView = SC.View.extend(
   SC.StaticLayout,
   SC.Control,
+  Brainslug.SelectOnMouseoverSupport,
 /** @scope Brainslug.TvShowGridItemView.prototype */ {
 
 

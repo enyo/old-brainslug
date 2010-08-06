@@ -14,27 +14,33 @@ Brainslug.mainPage = SC.Page.design({
 
   home: Brainslug.MainPane.design({
 
-    layout: { width: 1280, height: 720, centerX: 0, centerY: 0 },
-
     classNames: 'home'.w(),
 
     childViews: 'menu'.w(),
 
     menu: SC.View.design({
-      layout: { top: 200, right: 40, height: 100, left: 40 },
-      childViews: 'moviesButton tvShowsButton'.w(),
+      layout: { top: 150, right: 40, height: 100, left: 40 },
+      childViews: 'buttons'.w(),
+
       classNames: 'main-menu'.w(),
 
-      moviesButton: Brainslug.MenuButtonView.design({
-        layout: { bottom: 0, height: 50, width: 300, left: 20 },
-        title: 'Movies',
-        action: 'showMovies'
-      }),
+      buttons: SC.View.design({
 
-      tvShowsButton: Brainslug.MenuButtonView.design({
-        layout: { bottom: 0, height: 50, width: 300, left: 320 },
-        title: 'TV Shows',
-        action: 'showTvShows'
+        layout: { bottom: 0, centerX: 0, width: 650, height: 100 },
+
+        childViews: 'moviesButton tvShowsButton'.w(),
+
+        moviesButton: Brainslug.MenuButtonView.design({
+          layout: { bottom: 0, height: 50, width: 300, left: 20 },
+          title: 'Movies',
+          action: 'showMovies'
+        }),
+
+        tvShowsButton: Brainslug.MenuButtonView.design({
+          layout: { bottom: 0, height: 50, width: 300, left: 320 },
+          title: 'TV Shows',
+          action: 'showTvShows'
+        })
       })
 
     }),
@@ -43,7 +49,7 @@ Brainslug.mainPage = SC.Page.design({
       The first time the pane gets created, the movies button should become the first responder
     */
     didCreateLayer: function() {
-      this.getPath('menu.moviesButton').becomeFirstResponder();
+      this.getPath('menu.buttons.moviesButton').becomeFirstResponder();
     }
 
 
@@ -51,8 +57,6 @@ Brainslug.mainPage = SC.Page.design({
 
 
   movies: Brainslug.MainPane.design({
-
-    layout: { width: 1280, height: 720, centerX: 0, centerY: 0 },
 
     classNames: 'movies'.w(),
 
@@ -73,7 +77,9 @@ Brainslug.mainPage = SC.Page.design({
 
       contentBinding: 'Brainslug.moviesController.arrangedObjects',
       selectionBinding: 'Brainslug.moviesController.selection',
-      
+
+//      actOnSelect: YES,
+
       exampleView: Brainslug.MovieGridItemView
     }),
 
@@ -87,8 +93,6 @@ Brainslug.mainPage = SC.Page.design({
   }),
   
   tvShows: Brainslug.MainPane.design({
-
-    layout: { width: 1280, height: 720, centerX: 0, centerY: 0 },
 
     classNames: 'tv-shows'.w(),
 

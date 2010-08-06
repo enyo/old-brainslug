@@ -13,6 +13,7 @@
 Brainslug.MovieGridItemView = SC.View.extend(
   SC.StaticLayout,
   SC.Control,
+  Brainslug.SelectOnMouseoverSupport,
 /** @scope Brainslug.MovieGridItemView.prototype */ {
 
 
@@ -33,9 +34,9 @@ Brainslug.MovieGridItemView = SC.View.extend(
   }),
   
   image: SC.ImageView.design({
-    layout: { top: 20, centerX: 0, height: 160 },
+    layout: { top: 20, centerX: 0, width: 130, height: 160 },
     valueBinding: '.parentView.content.coverUrl'
   })
-  
+
 });
 

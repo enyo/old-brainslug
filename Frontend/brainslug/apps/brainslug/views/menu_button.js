@@ -12,8 +12,9 @@ require("mixins/previous_next_view_support");
 
   @extends SC.View
 */
-Brainslug.MenuButtonView = SC.ButtonView.extend(/** @scope Brainslug.MenuButton.prototype */
-  Brainslug.PreviousNextViewSupport, {
+Brainslug.MenuButtonView = SC.ButtonView.extend(
+  Brainslug.PreviousNextViewSupport,
+/** @scope Brainslug.MenuButton.prototype */ {
 
   classNames: 'menu-button'.w(),
   
@@ -46,6 +47,12 @@ Brainslug.MenuButtonView = SC.ButtonView.extend(/** @scope Brainslug.MenuButton.
     return YES;
   },
 
+  /**
+   * Activate the button on mouseover
+   */
+  mouseOver: function() {
+    this.becomeFirstResponder();
+  },
 
   /**
     Avoiding the delay
