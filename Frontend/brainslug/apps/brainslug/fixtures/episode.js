@@ -10,7 +10,7 @@ Brainslug.Episode.FIXTURES = [
 
   {
     id: "e-1",
-    name: "Pilot"
+    name: "Pilot",
     imdbId: "bla",
     number: "1",
     season: "s-1",
@@ -18,7 +18,7 @@ Brainslug.Episode.FIXTURES = [
   },
   {
     id: "e-2",
-    name: "The story begins!"
+    name: "The story begins!",
     imdbId: "bla",
     number: "2",
     season: "s-1",
@@ -26,7 +26,7 @@ Brainslug.Episode.FIXTURES = [
   },
   {
     id: "e-3",
-    name: "The story continues!"
+    name: "The story continues!",
     imdbId: "bla",
     number: "1",
     season: "s-2",
@@ -34,7 +34,7 @@ Brainslug.Episode.FIXTURES = [
   },
   {
     id: "e-4",
-    name: "Pilot!"
+    name: "Pilot!",
     imdbId: "bla",
     number: "1",
     season: "s-3",
@@ -42,7 +42,7 @@ Brainslug.Episode.FIXTURES = [
   },
   {
     id: "e-5",
-    name: "Get it on!"
+    name: "Get it on!",
     imdbId: "bla",
     number: "2",
     season: "s-3",
@@ -50,7 +50,7 @@ Brainslug.Episode.FIXTURES = [
   },
   {
     id: "e-6",
-    name: "Oh yeah!"
+    name: "Oh yeah!",
     imdbId: "bla",
     number: "1",
     season: "s-4",
@@ -58,7 +58,7 @@ Brainslug.Episode.FIXTURES = [
   },
   {
     id: "e-7",
-    name: "This is so good!"
+    name: "This is so good!",
     imdbId: "bla",
     number: "2",
     season: "s-4",
