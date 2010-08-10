@@ -18,9 +18,7 @@ Brainslug.main = function main() {
   // on screen.  If you app gets any level of complexity, you will probably 
   // create multiple pages and panes.  
 
-
-  this.sendAction('showHome');
-
+  this.showHome();
 
   // Step 2. Set the content property on your primary controller.
   // This will make your app come alive!
