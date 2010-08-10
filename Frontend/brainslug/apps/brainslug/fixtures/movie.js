@@ -10,12 +10,12 @@ Brainslug.Movie.FIXTURES = [
 
   { id: 1,
     name: 'Sex And The City',
-    imdbId: '123abc',
+    imdbId: 'tt1000774',
     coverUrl: 'http://www.pursepage.com/wp-content/uploads/2008/01/sex-and-the-city-movie-poster.jpg' },
 
   { id: 2,
     name: 'Twilight',
-    imdbId: '123abc',
+    imdbId: 'tt1099212',
     coverUrl: 'http://juiceboxdotcom.com/wp-content/themes/mimbo2.2/images//twilight-movie-poster.jpg' },
 
   { id: 3,
