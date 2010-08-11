@@ -1,5 +1,7 @@
 #include <boost/program_options.hpp>
+#include <boost/asio.hpp>
 #include <iostream>
+#include "FrontendServer.h"
 
 namespace {
 
@@ -32,9 +34,18 @@ namespace {
     }
     return o;
   }
+
+  void startServices(const Options& o) {
+    try {
+      boost::asio::io_service ios;
+      FrontendServer fs(ios);
+      ios.run();
+    } catch (const std::exception& e) {
+      std::cerr << "Caught exception running backend services: " << e.what() << std::endl;
+    }
+  }
 }
 
 int main(int argc, char* argv[]) {
-  const Options o(getOptionsFromCommandLine(argc,argv));
-  
+  startServices(getOptionsFromCommandLine(argc,argv));
 }
