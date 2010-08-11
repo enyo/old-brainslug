@@ -1,0 +1,8 @@
+* PROJ Write the brainslug backend in C++
+** TODO Communicate with the frontend
+*** Ben and Matthias want to do the SC side using WebSockets, which means we need a TCP server. Find the best library for doing this
+**** TODO Try Boost.Asio
+** TODO Communicate with the scrape server
+*** No clue yet, but since the server hasn't even been started, this isn't a pressing issue.
+** TODO Store the cached scrape data in some kind of model
+*** SQLite backend? A real database?
