@@ -1,4 +1,5 @@
 #include <boost/program_options.hpp>
+#include <iostream>
 
 namespace {
 
@@ -25,6 +26,10 @@ namespace {
 				     od), 
 	      vm);
     po::notify(vm);
+    if (vm.count("help")) {
+      std::cout << od << std::endl;
+      exit(1);
+    }
     return o;
   }
 }
