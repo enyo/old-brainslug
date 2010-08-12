@@ -10,7 +10,7 @@ public:
 
 private:
   FrontendConnection(boost::asio::io_service& ios);
-  void handle_write(const boost::system::error_code& error, size_t bytesTransferred);
+  void handleWrite(const boost::system::error_code& error, size_t bytesTransferred);
   
   boost::asio::ip::tcp::socket _socket;
 };
