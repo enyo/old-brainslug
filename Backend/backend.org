@@ -1,7 +1,8 @@
 * PROJ Write the brainslug backend in C++
 ** TODO Communicate with the frontend
 *** Ben and Matthias want to do the SC side using WebSockets, which means we need a TCP server. Find the best library for doing this
-**** TODO Try Boost.Asio
+**** DONE Try Boost.Asio
+***** Since we need to handle HTTP, asio is a bit too low-level. Currently trying out pion-net. Looks promising.
 **** DONE Fix weird malloc-related crash when specifying a port number on the command line :bugs:
 ***** Not really a bug. Forgot to switch from gcc 4.5 back to llvm-gcc 4.2
 **** TODO Decide on some sort of formal protocol.
