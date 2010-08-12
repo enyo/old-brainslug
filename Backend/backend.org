@@ -2,8 +2,16 @@
 ** TODO Communicate with the frontend
 *** Ben and Matthias want to do the SC side using WebSockets, which means we need a TCP server. Find the best library for doing this
 **** TODO Try Boost.Asio
-**** DONE Fix weird malloc-related crash when specifying a port number on the command line
+**** DONE Fix weird malloc-related crash when specifying a port number on the command line :bugs:
 ***** Not really a bug. Forgot to switch from gcc 4.5 back to llvm-gcc 4.2
+**** TODO Decide on some sort of formal protocol.
+       - Need a version number of the serialization format to ensure data integrity
+       - What serialization format to use? 
+	 + JSON
+	 + Plists
+	 + Binary
+	 + Something else
+       - Should under no circumstances assume that the frontend is using JavaScript in case we ever have to change this or add a 2nd frontend 
 ** TODO Communicate with the scrape server
 *** No clue yet, but since the server hasn't even been started, this isn't a pressing issue.
 ** TODO Store the cached scrape data in some kind of model
