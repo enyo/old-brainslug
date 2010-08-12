@@ -37,9 +37,8 @@ namespace {
 
   void startServices(const Options& o) {
     try {
-      boost::asio::io_service ios;
-      FrontendServer fs(ios, o.port);
-      ios.run();
+      FrontendServer fs(o.port);
+      fs.run();
     } catch (const std::exception& e) {
       std::cerr << "Caught exception running backend services: " << e.what() << std::endl;
     }

@@ -1,13 +1,12 @@
 #pragma once
-#include <boost/asio.hpp>
+#include <pion/net/HTTPServer.hpp>
 
 class FrontendConnection;
 
 class FrontendServer {
 public:
-  FrontendServer(boost::asio::io_service& ios, const size_t port);
+  FrontendServer(const size_t port);
+  void run();
 private:
-  void startAccept();
-  void handleAccept(boost::shared_ptr<FrontendConnection> connection, const boost::system::error_code& error);
-  boost::asio::ip::tcp::acceptor _acceptor;
+  pion::net::HTTPServer _httpServer;
 };
