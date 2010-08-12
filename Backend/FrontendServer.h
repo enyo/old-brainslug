@@ -7,5 +7,6 @@ public:
   void run();
 private:
   void handleNotFound(pion::net::HTTPRequestPtr&,pion::net::TCPConnectionPtr&);
+  void handleBrainslug(pion::net::HTTPRequestPtr&,pion::net::TCPConnectionPtr&);
   pion::net::HTTPServer _httpServer;
 };
