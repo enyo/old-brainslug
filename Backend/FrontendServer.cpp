@@ -1,4 +1,5 @@
 #include "FrontendServer.h"
+#include <pion/net/HTTPResponseWriter.hpp>
 #include <boost/bind.hpp>
 #include <iostream>
 
@@ -7,8 +8,8 @@ FrontendServer::FrontendServer(const size_t port)
   _httpServer.setNotFoundHandler(
 				 boost::bind(&FrontendServer::handleNotFound, this, _1, _2));
   _httpServer.addResource(
-			  "/brainslug",
-			  boost::bind(&FrontendServer::handleBrainslug, this, _1, _2));
+			  "/movies",
+			  boost::bind(&FrontendServer::handleMovies, this, _1, _2));
 }
 
 void FrontendServer::run() {
@@ -34,7 +35,9 @@ void FrontendServer::handleNotFound(pion::net::HTTPRequestPtr& request, pion::ne
   dumpRequestToCout(request);
 }
 
-void FrontendServer::handleBrainslug(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
-  std::cout << "Handled brainslug request." << std::endl;
-  dumpRequestToCout(request);
+void FrontendServer::handleMovies(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
+  const boost::shared_ptr<pion::net::HTTPResponseWriter> writer(pion::net::HTTPResponseWriter::create(connection,*request));
+  writer->write("<html><head><title>No Movies Found</title></head><body><p>No movies found.</p></body></html>");
+  writer->send();
 }
+
