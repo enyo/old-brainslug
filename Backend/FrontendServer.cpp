@@ -38,24 +38,30 @@ void FrontendServer::handleNotFound(pion::net::HTTPRequestPtr& request, pion::ne
   dumpRequestToCout(request);
 }
 
-void FrontendServer::handleMovies(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
+void FrontendServer::listMovies(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
   const boost::shared_ptr<pion::net::HTTPResponseWriter> writer(pion::net::HTTPResponseWriter::create(connection,*request));
 
   std::string resultString;
   {
-    /*
-        "Movies" : [ { "Title" : "Back to the Future", "Year" : "1985", "Rating" : 8.7 } ]
-     */
     json::Array movies;
     {
       json::Object movie;
-      movie["Title"] = json::String("Back to the Future");
-      movie["Year"] = json::String("1985");
-      movie["Rating"] = json::Number(8.7);
+      movie["id"] = json::String("1");
+      movie["name"] = json::String("Sex and the City");
+      movie["imdbId"] = json::String("tt10000774");
+      movie["coverUrl"] = json::String("http://www.pursepage.com/wp-content/uploads/2008/01/sex-and-the-city-movie-poster.jpg");
+      movies.Insert(movie);
+    }
+    {
+      json::Object movie;
+      movie["id"] = json::String("2");
+      movie["name"] = json::String("Twilight");
+      movie["imdbId"] = json::String("tt1099212");
+      movie["coverUrl"] = json::String("http://juiceboxdotcom.com/wp-content/themes/mimbo2.2/images//twilight-movie-poster.jpg");
       movies.Insert(movie);
     }
     json::Object doc;
-    doc["Movies"] = movies;
+    doc["content"] = movies;
     std::stringstream ss;
 
     json::Writer::Write(doc,ss);
@@ -64,5 +70,10 @@ void FrontendServer::handleMovies(pion::net::HTTPRequestPtr& request, pion::net:
   }
   writer->write(resultString.c_str());
   writer->send();
+}
+
+void FrontendServer::handleMovies(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
+  if (request->hasQuery("list"))
+    listMovies(request,connection);
 }
 
