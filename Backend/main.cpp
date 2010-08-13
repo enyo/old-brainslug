@@ -1,11 +1,10 @@
+#include "Conf.h"
+#include "FrontendServer.h"
 #include <boost/program_options.hpp>
 #include <boost/asio.hpp>
 #include <iostream>
-#include "FrontendServer.h"
 
 namespace {
-
-  const size_t DEFAULT_PORT = 5555;
 
   struct Options {
     size_t port;
