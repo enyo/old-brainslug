@@ -1,14 +1,11 @@
 #include "Conf.h"
+#include "Options.h"
 #include "FrontendServer.h"
 #include <boost/program_options.hpp>
 #include <boost/asio.hpp>
 #include <iostream>
 
 namespace {
-
-  struct Options {
-    size_t port;
-  };
 
   Options getOptionsFromCommandLine(const int argc, char* argv[]) {
     Options o;
@@ -36,7 +33,7 @@ namespace {
 
   void startServices(const Options& o) {
     try {
-      FrontendServer fs(o.port);
+      FrontendServer fs(o);
       fs.run();
     } catch (const std::exception& e) {
       std::cerr << "Caught exception running backend services: " << e.what() << std::endl;
