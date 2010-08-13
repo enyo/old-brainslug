@@ -1,9 +1,10 @@
 #include "FrontendServer.h"
 #include <pion/net/HTTPResponseWriter.hpp>
 #include <boost/bind.hpp>
-#include <boost/property_tree/ptree.hpp>
-#include <boost/property_tree/json_parser.hpp>
+#include <json/writer.h>
+#include <json/elements.h>
 #include <iostream>
+#include <sstream>
 
 FrontendServer::FrontendServer(const size_t port)
   : _httpServer(boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), port)) {
@@ -39,10 +40,28 @@ void FrontendServer::handleNotFound(pion::net::HTTPRequestPtr& request, pion::ne
 
 void FrontendServer::handleMovies(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
   const boost::shared_ptr<pion::net::HTTPResponseWriter> writer(pion::net::HTTPResponseWriter::create(connection,*request));
-  boost::property_tree::ptree result; // leave empty
+
   std::string resultString;
-  std::ostringstream os(resultString);
-  boost::property_tree::write_json(os,result);
+  {
+    /*
+        "Movies" : [ { "Title" : "Back to the Future", "Year" : "1985", "Rating" : 8.7 } ]
+     */
+    json::Array movies;
+    {
+      json::Object movie;
+      movie["Title"] = json::String("Back to the Future");
+      movie["Year"] = json::String("1985");
+      movie["Rating"] = json::Number(8.7);
+      movies.Insert(movie);
+    }
+    json::Object doc;
+    doc["Movies"] = movies;
+    std::stringstream ss;
+
+    json::Writer::Write(doc,ss);
+    resultString = ss.str();
+    std::cout << "Writing JSON: " << resultString << std::endl;
+  }
   writer->write(resultString.c_str());
   writer->send();
 }
