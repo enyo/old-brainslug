@@ -1,6 +1,8 @@
 #include "FrontendServer.h"
 #include <pion/net/HTTPResponseWriter.hpp>
 #include <boost/bind.hpp>
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/json_parser.hpp>
 #include <iostream>
 
 FrontendServer::FrontendServer(const size_t port)
@@ -37,7 +39,11 @@ void FrontendServer::handleNotFound(pion::net::HTTPRequestPtr& request, pion::ne
 
 void FrontendServer::handleMovies(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
   const boost::shared_ptr<pion::net::HTTPResponseWriter> writer(pion::net::HTTPResponseWriter::create(connection,*request));
-  writer->write("<html><head><title>No Movies Found</title></head><body><p>No movies found.</p></body></html>");
+  boost::property_tree::ptree result; // leave empty
+  std::string resultString;
+  std::ostringstream os(resultString);
+  boost::property_tree::write_json(os,result);
+  writer->write(resultString.c_str());
   writer->send();
 }
 
