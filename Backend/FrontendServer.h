@@ -1,5 +1,5 @@
 #pragma once
-#include <pion/net/HTTPServer.hpp>
+#include "MoviesResourceHandler.h"
 
 struct Options;
 
@@ -9,8 +9,7 @@ public:
   void run();
 private:
   void handleNotFound(pion::net::HTTPRequestPtr&,pion::net::TCPConnectionPtr&);
-  void handleMovies(pion::net::HTTPRequestPtr&,pion::net::TCPConnectionPtr&);
-  void listMovies(pion::net::HTTPRequestPtr&,pion::net::TCPConnectionPtr&);
-  void findMovieByID(pion::net::HTTPRequestPtr&,pion::net::TCPConnectionPtr&);
+
   pion::net::HTTPServer _httpServer;
+  MoviesResourceHandler _mh;
 };
