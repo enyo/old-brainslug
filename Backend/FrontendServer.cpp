@@ -53,6 +53,7 @@ namespace {
 	movies.Insert(movie);
       }
       doc["content"] = movies;
+      doc["error"] = json::Null();
     }
 
     json::Object doc;
@@ -82,7 +83,12 @@ void FrontendServer::findMovieByID(pion::net::HTTPRequestPtr& request, pion::net
 	const boost::shared_ptr<pion::net::HTTPResponseWriter> writer(pion::net::HTTPResponseWriter::create(connection,*request));
 	std::string resultString;
 	std::stringstream ss;
-	json::Writer::Write(movie,ss);
+	json::Object doc;
+	json::Array resultContent;
+	resultContent.Insert(movie);
+	doc["content"] = resultContent;
+	doc["error"] = json::Null();
+	json::Writer::Write(doc,ss);
 	resultString = ss.str();
 	writer->write(resultString.c_str());
 	writer->send();	
