@@ -8,3 +8,6 @@ brainslug-backend : $(OBJECTS)
 
 %.o : %.cpp
 	g++ $(CFLAGS) -c $<
+
+clean :
+	rm *.o
