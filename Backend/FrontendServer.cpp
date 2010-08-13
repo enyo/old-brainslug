@@ -15,6 +15,9 @@ FrontendServer::FrontendServer(const Options& o)
   _httpServer.addResource(
 			  "/movies",
 			  boost::bind(&MoviesResourceHandler::handle, &_mh, _1, _2));
+  _httpServer.addResource(
+			  "/tvshows",
+			  boost::bind(&FrontendServer::handleTVShows, this, _1, _2));
 }
 
 void FrontendServer::run() {
@@ -41,4 +44,17 @@ void FrontendServer::handleNotFound(pion::net::HTTPRequestPtr& request, pion::ne
   dumpRequestToCout(request);
 }
 
+
+void FrontendServer::listTVShows(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
+}
+
+void FrontendServer::findTVShowByID(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
+}
+
+void FrontendServer::handleTVShows(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
+  if (request->hasQuery("list"))
+    listTVShows(request,connection);
+  else if (request->hasQuery("view"))
+    findTVShowByID(request,connection);
+}
 
