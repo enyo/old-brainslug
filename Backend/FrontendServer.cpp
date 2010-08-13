@@ -84,9 +84,7 @@ void FrontendServer::findMovieByID(pion::net::HTTPRequestPtr& request, pion::net
 	std::string resultString;
 	std::stringstream ss;
 	json::Object doc;
-	json::Array resultContent;
-	resultContent.Insert(movie);
-	doc["content"] = resultContent;
+	doc["content"] = movie;
 	doc["error"] = json::Null();
 	json::Writer::Write(doc,ss);
 	resultString = ss.str();
