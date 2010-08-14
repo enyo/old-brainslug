@@ -1,7 +1,6 @@
 #include "MoviesTestDB.h"
 
-MoviesTestDB::MoviesTestDB()
-: _doc(new json::Object ) {
+MoviesTestDB::MoviesTestDB() {
   json::Array movies;
   {
     json::Object movie;
@@ -19,13 +18,13 @@ MoviesTestDB::MoviesTestDB()
     movie["coverUrl"] = json::String("http://juiceboxdotcom.com/wp-content/themes/mimbo2.2/images//twilight-movie-poster.jpg");
     movies.Insert(movie);
   }
-  (*_doc)["content"] = movies;
-  (*_doc)["error"] = json::Null();
+  (*doc())["content"] = movies;
+  (*doc())["error"] = json::Null();
 }
 
 JSONObjectPtr MoviesTestDB::select(const std::string& fromSource) const {
   if (fromSource == "movies")
-    return _doc;
+    return doc();
   else {
     JSONObjectPtr resultsDoc(new json::Object);
     (*resultsDoc)["error"] = json::String(std::string("unrecognized db source: ") + fromSource);
@@ -41,7 +40,7 @@ JSONObjectPtr MoviesTestDB::selectWhere(const std::string& fromSource, const std
   if (fromSource == "movies") {
     const std::string& key = query.first;
     const std::string& value = query.second;
-    const json::Array& content = (*_doc)["content"];
+    const json::Array& content = (*doc())["content"];
     json::Array::const_iterator movieIt(content.Begin());
     const json::Array::const_iterator end(content.End());
     try {

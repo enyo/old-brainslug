@@ -1,7 +1,6 @@
 #include "TVShowsTestDB.h"
 
-TVShowsTestDB::TVShowsTestDB()
-: _doc(new json::Object ) {
+TVShowsTestDB::TVShowsTestDB() {
   json::Array tvshows;
   {
     json::Object tvshow;
@@ -19,13 +18,13 @@ TVShowsTestDB::TVShowsTestDB()
     tvshow["coverUrl"] = json::String("http://getvideoartwork.com/gallery/main.php?g2_view=core.DownloadItem&g2_itemId=70729&g2_serialNumber=1");
     tvshows.Insert(tvshow);
   }
-  (*_doc)["content"] = tvshows;
-  (*_doc)["error"] = json::Null();
+  (*doc())["content"] = tvshows;
+  (*doc())["error"] = json::Null();
 }
 
 JSONObjectPtr TVShowsTestDB::select(const std::string& fromSource) const {
   if (fromSource == "tvshows")
-    return _doc;
+    return doc();
   else {
     JSONObjectPtr resultsDoc(new json::Object);
     (*resultsDoc)["error"] = json::String(std::string("unrecognized db source: ") + fromSource);
@@ -41,7 +40,7 @@ JSONObjectPtr TVShowsTestDB::selectWhere(const std::string& fromSource, const st
   if (fromSource == "tvshows") {
     const std::string& key = query.first;
     const std::string& value = query.second;
-    const json::Array& content = (*_doc)["content"];
+    const json::Array& content = (*doc())["content"];
     json::Array::const_iterator tvshowIt(content.Begin());
     const json::Array::const_iterator end(content.End());
     try {
