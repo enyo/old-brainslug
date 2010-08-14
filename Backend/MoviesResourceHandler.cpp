@@ -9,7 +9,7 @@ MoviesResourceHandler::MoviesResourceHandler(const DBPtr db)
 
 void MoviesResourceHandler::handle(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
   if (request->hasQuery("list"))
-    listMovies(request,connection);
+    list(request,connection);
   else if (request->hasQuery("view"))
     findMovieByID(request,connection);
   else
@@ -29,16 +29,5 @@ void MoviesResourceHandler::findMovieByID(pion::net::HTTPRequestPtr& request, pi
 								 *request,
 								 boost::bind(&pion::net::TCPConnection::finish, connection)));
     }
-  }
-}
-
-void MoviesResourceHandler::listMovies(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
-  if (JSONObjectPtr doc = db()->select("movies")) {
-    writeJsonHttpResponse(
-			  *doc,
-			  *pion::net::HTTPResponseWriter::create(
-								 connection,
-								 *request,
-								 boost::bind(&pion::net::TCPConnection::finish, connection)));
   }
 }

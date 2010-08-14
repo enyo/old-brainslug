@@ -39,3 +39,14 @@ void ResourceHandler::handle(pion::net::HTTPRequestPtr& request, pion::net::TCPC
 			  *writer,
 			  false);
 }
+
+void ResourceHandler::list(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
+  if (JSONObjectPtr doc = db()->select(_source)) {
+    writeJsonHttpResponse(
+			  *doc,
+			  *pion::net::HTTPResponseWriter::create(
+								 connection,
+								 *request,
+								 boost::bind(&pion::net::TCPConnection::finish, connection)));
+  }
+}
