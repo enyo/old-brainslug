@@ -3,8 +3,9 @@
 #include <json/writer.h>
 #include <sstream>
 
-ResourceHandler::ResourceHandler(const DBPtr db)
-  : _db(db) {}
+ResourceHandler::ResourceHandler(const DBPtr db, const std::string& source)
+  : _db(db)
+  , _source(source) {}
 
 ResourceHandler::~ResourceHandler() {}
 

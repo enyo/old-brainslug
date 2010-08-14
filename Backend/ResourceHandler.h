@@ -6,7 +6,7 @@
 
 class ResourceHandler {
 public:
-  ResourceHandler(const DBPtr db);
+  ResourceHandler(const DBPtr db, const std::string& source);
   virtual ~ResourceHandler();
   virtual void handle(pion::net::HTTPRequestPtr&,pion::net::TCPConnectionPtr&);
 
@@ -16,4 +16,5 @@ protected:
 
 private:
   const DBPtr _db;
+  const std::string _source;
 };

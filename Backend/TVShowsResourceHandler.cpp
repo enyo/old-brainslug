@@ -5,7 +5,7 @@
 #include <sstream>
 
 TVShowsResourceHandler::TVShowsResourceHandler(const DBPtr db)
-  : ResourceHandler(db) {}
+  : ResourceHandler(db,"tvshows") {}
 
 void TVShowsResourceHandler::handle(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
   if (request->hasQuery("list"))
