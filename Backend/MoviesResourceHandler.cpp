@@ -4,21 +4,8 @@
 #include <json/writer.h>
 #include <sstream>
 
-namespace {
-  void writeJsonHttpResponse(const json::Object& obj,pion::net::HTTPResponseWriter& writer,const bool setStatusOK=true) {
-      std::stringstream ss;
-      json::Writer::Write(obj,ss);
-      if (setStatusOK) {
-	writer.getResponse().setStatusCode(pion::net::HTTPTypes::RESPONSE_CODE_OK);
-	writer.getResponse().setStatusMessage(pion::net::HTTPTypes::RESPONSE_MESSAGE_OK);
-      }
-      writer.write(ss.str().c_str());
-      writer.send();
-  }
-}
-
 MoviesResourceHandler::MoviesResourceHandler(const DBPtr db)
-  : _db(db) {}
+  : ResourceHandler(db) {}
 
 void MoviesResourceHandler::handle(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
   if (request->hasQuery("list"))
@@ -47,7 +34,7 @@ void MoviesResourceHandler::findMovieByID(pion::net::HTTPRequestPtr& request, pi
   const pion::net::HTTPTypes::QueryParams::const_iterator match(params.find("view"));
   if (match != params.end()) {
     const std::string& id = match->second;
-    if (JSONObjectPtr doc = _db->selectWhere("movies", std::make_pair("id",id))) {
+    if (JSONObjectPtr doc = db()->selectWhere("movies", std::make_pair("id",id))) {
     writeJsonHttpResponse(
 			  *doc,
 			  *pion::net::HTTPResponseWriter::create(
@@ -59,7 +46,7 @@ void MoviesResourceHandler::findMovieByID(pion::net::HTTPRequestPtr& request, pi
 }
 
 void MoviesResourceHandler::listMovies(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
-  if (JSONObjectPtr doc = _db->select("movies")) {
+  if (JSONObjectPtr doc = db()->select("movies")) {
     writeJsonHttpResponse(
 			  *doc,
 			  *pion::net::HTTPResponseWriter::create(
