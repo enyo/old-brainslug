@@ -57,14 +57,12 @@ void MoviesResourceHandler::findMovieByID(pion::net::HTTPRequestPtr& request, pi
       const json::String& movieId = movie["id"];
       if (movieId == id) {
 	const boost::shared_ptr<pion::net::HTTPResponseWriter> writer(pion::net::HTTPResponseWriter::create(connection,*request));
-	std::string resultString;
 	std::stringstream ss;
 	json::Object doc;
 	doc["content"] = movie;
 	doc["error"] = json::Null();
 	json::Writer::Write(doc,ss);
-	resultString = ss.str();
-	writer->write(resultString.c_str());
+	writer->write(ss.str().c_str());
 	writer->send();	
 	return;
       }
@@ -74,10 +72,8 @@ void MoviesResourceHandler::findMovieByID(pion::net::HTTPRequestPtr& request, pi
 
 void MoviesResourceHandler::listMovies(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
   const boost::shared_ptr<pion::net::HTTPResponseWriter> writer(pion::net::HTTPResponseWriter::create(connection,*request));
-  std::string resultString;
   std::stringstream ss;
   json::Writer::Write(moviesDB.doc,ss);
-  resultString = ss.str();
-  writer->write(resultString.c_str());
+  writer->write(ss.str().c_str());
   writer->send();
 }

@@ -1,5 +1,5 @@
 * PROJ Write the brainslug backend in C++
-** TODO Communicate with the frontend
+** TODO Communicate with the frontend :frontend:
 *** Ben and Matthias want to do the SC side using WebSockets, which means we need a TCP server. Find the best library for doing this
 **** DONE Try Boost.Asio
 ***** Since we need to handle HTTP, asio is a bit too low-level. Currently trying out pion-net. Looks promising.
@@ -12,8 +12,9 @@
 	 + Plists
 	 + Binary
 	 + Something else
-       - Should under no circumstances assume that the frontend is using JavaScript in case we ever have to change this or add a 2nd frontend 
-** TODO Communicate with the scrape server
+       - Should under no circumstances assume that the frontend is using JavaScript in case we ever have to change this or add a 2nd frontend
+**** TODO Get rid of the hardcoded JSON data in MoviesResourceHandler etc. and use a real database for storing this info :model: 
+** TODO Communicate with the scrape server :scrape:
 *** No clue yet, but since the server hasn't even been started, this isn't a pressing issue.
-** TODO Store the cached scrape data in some kind of model
+** TODO Store the cached scrape data in some kind of model :model:
 *** SQLite backend? A real database?
