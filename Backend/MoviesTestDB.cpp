@@ -24,32 +24,39 @@ MoviesTestDB::MoviesTestDB()
 }
 
 JSONObjectPtr MoviesTestDB::select(const std::string& fromSource) const {
-  if (fromSource == "movies") {
+  if (fromSource == "movies")
     return _doc;
+  else {
+    JSONObjectPtr resultsDoc(new json::Object);
+    (*resultsDoc)["error"] = json::String(std::string("unrecognized db source") + fromSource);
+    return resultsDoc;
   }
 }
 
 JSONObjectPtr MoviesTestDB::selectWhere(const std::string& fromSource, const std::pair<const std::string,const std::string>& query) const {
   JSONObjectPtr resultsDoc(new json::Object);
-  const std::string& key = query.first;
-  const std::string& value = query.second;
-  const json::Array& content = (*_doc)["content"];
-  json::Array::const_iterator movieIt(content.Begin());
-  const json::Array::const_iterator end(content.End());
-  try {
-    for (; movieIt!=end; ++movieIt) {
-      const json::Object& movie = *movieIt;
-      const json::String& movieValue = movie[key];
-      if (movieValue == value) {
-	(*resultsDoc)["content"] = movie;
-	(*resultsDoc)["error"] = json::Null();
-	break;
+  if (fromSource == "movies") {
+    const std::string& key = query.first;
+    const std::string& value = query.second;
+    const json::Array& content = (*_doc)["content"];
+    json::Array::const_iterator movieIt(content.Begin());
+    const json::Array::const_iterator end(content.End());
+    try {
+      for (; movieIt!=end; ++movieIt) {
+	const json::Object& movie = *movieIt;
+	const json::String& movieValue = movie[key];
+	if (movieValue == value) {
+	  (*resultsDoc)["content"] = movie;
+	  (*resultsDoc)["error"] = json::Null();
+	  break;
+	}
       }
+    } catch (const json::Exception& e) {
+      // probably the key is not part of the movie object
+      (*resultsDoc)["error"] = json::String(e.what());
     }
-  } catch (const json::Exception& e) {
-    // probably the key is not part of the movie object
-    (*resultsDoc)["error"] = json::String(e.what());
-  }
+  } else
+    (*resultsDoc)["error"] = json::String(std::string("unrecognized db source") + fromSource);
   return resultsDoc;
 }
 
