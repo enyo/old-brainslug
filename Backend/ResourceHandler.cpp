@@ -25,6 +25,11 @@ DBPtr ResourceHandler::db() const {
 }
 
 void ResourceHandler::handle(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
+  if (request->hasQuery("list"))
+    list(request,connection);
+  else if (request->hasQuery("view"))
+    findByID(request,connection);
+  else {
     JSONObjectPtr doc(new json::Object);
     (*doc)["error"] = json::String(std::string("unrecognized query ") + request->getQueryString());
     boost::shared_ptr<pion::net::HTTPResponseWriter> writer(
@@ -38,6 +43,7 @@ void ResourceHandler::handle(pion::net::HTTPRequestPtr& request, pion::net::TCPC
 			  *doc,
 			  *writer,
 			  false);
+  }
 }
 
 void ResourceHandler::list(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
