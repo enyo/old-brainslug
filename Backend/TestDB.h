@@ -5,9 +5,10 @@
 
 class TestDB : public DB {
 public:
-  TestDB(const bool createDoc=true);
+  TestDB(const std::string& source, const bool createDoc=true);
 protected:
   JSONObjectPtr doc() const;
 private:
   JSONObjectPtr _doc;
+  const std::string _source;
 };

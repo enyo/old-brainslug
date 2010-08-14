@@ -1,6 +1,7 @@
 #include "TVShowsTestDB.h"
 
-TVShowsTestDB::TVShowsTestDB() {
+TVShowsTestDB::TVShowsTestDB()
+  : TestDB("tvshows") {
   json::Array tvshows;
   {
     json::Object tvshow;

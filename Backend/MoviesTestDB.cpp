@@ -1,6 +1,7 @@
 #include "MoviesTestDB.h"
 
-MoviesTestDB::MoviesTestDB() {
+MoviesTestDB::MoviesTestDB() 
+  : TestDB("movies") {
   json::Array movies;
   {
     json::Object movie;
