@@ -1,5 +1,6 @@
 #include "FrontendServer.h"
 #include "Options.h"
+#include "MoviesTestDB.h"
 #include <pion/net/HTTPResponseWriter.hpp>
 #include <pion/net/HTTPTypes.hpp>
 #include <boost/bind.hpp>
@@ -9,7 +10,10 @@
 #include <sstream>
 
 FrontendServer::FrontendServer(const Options& o)
-  : _httpServer(boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), o.port)) {
+  : _httpServer(boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), o.port))
+  , _moviesTestDB(new MoviesTestDB)
+  , _mh(_moviesTestDB)
+{
   _httpServer.setNotFoundHandler(
 				 boost::bind(&FrontendServer::handleNotFound, this, _1, _2));
   _httpServer.addResource(
