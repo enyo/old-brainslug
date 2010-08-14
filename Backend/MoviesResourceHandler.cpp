@@ -12,21 +12,8 @@ void MoviesResourceHandler::handle(pion::net::HTTPRequestPtr& request, pion::net
     listMovies(request,connection);
   else if (request->hasQuery("view"))
     findMovieByID(request,connection);
-  else {
-    JSONObjectPtr doc(new json::Object);
-    (*doc)["error"] = json::String(std::string("unrecognized query ") + request->getQueryString());
-    boost::shared_ptr<pion::net::HTTPResponseWriter> writer(
-							    pion::net::HTTPResponseWriter::create(
-												  connection,
-												  *request,
-												  boost::bind(&pion::net::TCPConnection::finish, connection)));
-    writer->getResponse().setStatusCode(pion::net::HTTPTypes::RESPONSE_CODE_NOT_IMPLEMENTED);
-    writer->getResponse().setStatusMessage(pion::net::HTTPTypes::RESPONSE_MESSAGE_NOT_IMPLEMENTED);
-    writeJsonHttpResponse(
-			  *doc,
-			  *writer,
-			  false);
-  }
+  else
+    ResourceHandler::handle(request,connection);    
 }
 
 void MoviesResourceHandler::findMovieByID(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {

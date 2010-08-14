@@ -24,5 +24,17 @@ DBPtr ResourceHandler::db() const {
 }
 
 void ResourceHandler::handle(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
-
+    JSONObjectPtr doc(new json::Object);
+    (*doc)["error"] = json::String(std::string("unrecognized query ") + request->getQueryString());
+    boost::shared_ptr<pion::net::HTTPResponseWriter> writer(
+							    pion::net::HTTPResponseWriter::create(
+												  connection,
+												  *request,
+												  boost::bind(&pion::net::TCPConnection::finish, connection)));
+    writer->getResponse().setStatusCode(pion::net::HTTPTypes::RESPONSE_CODE_NOT_IMPLEMENTED);
+    writer->getResponse().setStatusMessage(pion::net::HTTPTypes::RESPONSE_MESSAGE_NOT_IMPLEMENTED);
+    writeJsonHttpResponse(
+			  *doc,
+			  *writer,
+			  false);
 }
