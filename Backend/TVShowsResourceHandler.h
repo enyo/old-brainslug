@@ -1,10 +1,5 @@
 #pragma once
-<<<<<<< HEAD
 #include "ResourceHandler.h"
-=======
-#include <pion/net/HTTPServer.hpp>
-#include "DB.h"
->>>>>>> tv_shows
 
 class TVShowsResourceHandler : public ResourceHandler {
 public:

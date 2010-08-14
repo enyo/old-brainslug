@@ -4,27 +4,8 @@
 #include <json/writer.h>
 #include <sstream>
 
-<<<<<<< HEAD
 TVShowsResourceHandler::TVShowsResourceHandler(const DBPtr db)
   : ResourceHandler(db) {}
-=======
-namespace {
-  void writeJsonHttpResponse(const json::Object& obj,pion::net::HTTPResponseWriter& writer,const bool setStatusOK=true) {
-      std::stringstream ss;
-      json::Writer::Write(obj,ss);
-      if (setStatusOK) {
-	writer.getResponse().setStatusCode(pion::net::HTTPTypes::RESPONSE_CODE_OK);
-	writer.getResponse().setStatusMessage(pion::net::HTTPTypes::RESPONSE_MESSAGE_OK);
-      }
-      writer.write(ss.str().c_str());
-      writer.send();
-  }
-}
-
-TVShowsResourceHandler::TVShowsResourceHandler(const DBPtr db)
-  : _db(db) {}
->>>>>>> tv_shows
-
 
 void TVShowsResourceHandler::handle(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
   if (request->hasQuery("list"))
@@ -49,11 +30,7 @@ void TVShowsResourceHandler::handle(pion::net::HTTPRequestPtr& request, pion::ne
 }
 
 void TVShowsResourceHandler::listTVShows(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
-<<<<<<< HEAD
   if (JSONObjectPtr doc = db()->select("tvshows")) {
-=======
-  if (JSONObjectPtr doc = _db->select("tvshows")) {
->>>>>>> tv_shows
     writeJsonHttpResponse(
 			  *doc,
 			  *pion::net::HTTPResponseWriter::create(
@@ -68,11 +45,7 @@ void TVShowsResourceHandler::findTVShowByID(pion::net::HTTPRequestPtr& request, 
   const pion::net::HTTPTypes::QueryParams::const_iterator match(params.find("view"));
   if (match != params.end()) {
     const std::string& id = match->second;
-<<<<<<< HEAD
     if (JSONObjectPtr doc = db()->selectWhere("tvshows", std::make_pair("id",id))) {
-=======
-    if (JSONObjectPtr doc = _db->selectWhere("tvshows", std::make_pair("id",id))) {
->>>>>>> tv_shows
     writeJsonHttpResponse(
 			  *doc,
 			  *pion::net::HTTPResponseWriter::create(
