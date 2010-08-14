@@ -15,5 +15,6 @@ private:
   pion::net::HTTPServer _httpServer;
   const DBPtr _moviesTestDB;
   MoviesResourceHandler _mh;
+  const DBPtr _tvshowsTestDB;
   TVShowsResourceHandler _tvh;
 };

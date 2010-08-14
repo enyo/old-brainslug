@@ -22,3 +22,7 @@ void ResourceHandler::writeJsonHttpResponse(const json::Object& obj,pion::net::H
 DBPtr ResourceHandler::db() const {
   return _db;
 }
+
+void ResourceHandler::handle(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
+
+}
