@@ -9,22 +9,11 @@ TVShowsResourceHandler::TVShowsResourceHandler(const DBPtr db)
 
 void TVShowsResourceHandler::handle(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
   if (request->hasQuery("list"))
-    listTVShows(request,connection);
+    list(request,connection);
   else if (request->hasQuery("view"))
     findTVShowByID(request,connection);
   else
     ResourceHandler::handle(request,connection);
-}
-
-void TVShowsResourceHandler::listTVShows(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
-  if (JSONObjectPtr doc = db()->select("tvshows")) {
-    writeJsonHttpResponse(
-			  *doc,
-			  *pion::net::HTTPResponseWriter::create(
-								 connection,
-								 *request,
-								 boost::bind(&pion::net::TCPConnection::finish, connection)));
-  }
 }
 
 void TVShowsResourceHandler::findTVShowByID(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
