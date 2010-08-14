@@ -14,6 +14,9 @@
 	 + Something else
        - Should under no circumstances assume that the frontend is using JavaScript in case we ever have to change this or add a 2nd frontend
 **** TODO Get rid of the hardcoded JSON data in MoviesResourceHandler etc. and use a real database for storing this info :model: 
+**** TODO Move all the common code from the test db classes into a base, TestDB, that derives from DB. Change it to read the JSON
+          in from a textfile instead of being hardcoded in C++. That should make it much simpler to modify the content and also
+	  add test databases for episodes, seasons, etc. in the future
 ** TODO Communicate with the scrape server :scrape:
 *** No clue yet, but since the server hasn't even been started, this isn't a pressing issue.
 ** TODO Store the cached scrape data in some kind of model :model:
