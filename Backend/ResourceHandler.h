@@ -13,6 +13,7 @@ public:
 protected:
   DBPtr db() const;
   virtual void list(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection);
+  virtual void findByID(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection);
   static void writeJsonHttpResponse(const json::Object& obj, pion::net::HTTPResponseWriter& writer, const bool setStatusOK=true);
 
 private:

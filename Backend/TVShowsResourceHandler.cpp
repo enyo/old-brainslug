@@ -11,23 +11,7 @@ void TVShowsResourceHandler::handle(pion::net::HTTPRequestPtr& request, pion::ne
   if (request->hasQuery("list"))
     list(request,connection);
   else if (request->hasQuery("view"))
-    findTVShowByID(request,connection);
+    findByID(request,connection);
   else
     ResourceHandler::handle(request,connection);
-}
-
-void TVShowsResourceHandler::findTVShowByID(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
-  const pion::net::HTTPTypes::QueryParams& params = request->getQueryParams();
-  const pion::net::HTTPTypes::QueryParams::const_iterator match(params.find("view"));
-  if (match != params.end()) {
-    const std::string& id = match->second;
-    if (JSONObjectPtr doc = db()->selectWhere("tvshows", std::make_pair("id",id))) {
-    writeJsonHttpResponse(
-			  *doc,
-			  *pion::net::HTTPResponseWriter::create(
-								 connection,
-								 *request,
-								 boost::bind(&pion::net::TCPConnection::finish, connection)));
-    }
-  }
 }

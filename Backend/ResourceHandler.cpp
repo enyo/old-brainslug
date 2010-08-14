@@ -50,3 +50,20 @@ void ResourceHandler::list(pion::net::HTTPRequestPtr& request, pion::net::TCPCon
 								 boost::bind(&pion::net::TCPConnection::finish, connection)));
   }
 }
+
+void ResourceHandler::findByID(pion::net::HTTPRequestPtr& request, pion::net::TCPConnectionPtr& connection) {
+  const pion::net::HTTPTypes::QueryParams& params = request->getQueryParams();
+  const pion::net::HTTPTypes::QueryParams::const_iterator match(params.find("view"));
+  if (match != params.end()) {
+    const std::string& id = match->second;
+    if (JSONObjectPtr doc = db()->selectWhere(_source, std::make_pair("id",id))) {
+    writeJsonHttpResponse(
+			  *doc,
+			  *pion::net::HTTPResponseWriter::create(
+								 connection,
+								 *request,
+								 boost::bind(&pion::net::TCPConnection::finish, connection)));
+    }
+  }
+}
+
