@@ -1,0 +1,19 @@
+
+{
+    "content" : 
+    [
+        {
+            "id" : "1",
+            "name" : "Desperate Housewives",
+            "imdbId" : "tt0410975",
+            "coverUrl" : "http://getvideoartwork.com/gallery/main.php?g2_view=core.DownloadItem&g2_itemId=8131&g2_serialNumber=2"
+        },
+        {
+            "id" : "2",
+            "name" : "Sex and the City",
+            "imdbId" : "tt0159206",
+            "coverUrl" : "http://getvideoartwork.com/gallery/main.php?g2_view=core.DownloadItem&g2_itemId=70729&g2_serialNumber=1"
+        }
+    ],
+    "error" : null
+}

@@ -1,0 +1,19 @@
+
+{
+    "content" : 
+    [
+        {
+            "id" : "1",
+            "name" : "Sex and the City",
+            "imdbId" : "tt10000774",
+            "coverUrl" : "http://www.pursepage.com/wp-content/uploads/2008/01/sex-and-the-city-movie-poster.jpg"
+        },
+        {
+            "id" : "2",
+            "name" : "Twilight",
+            "imdbId" : "tt1099212",
+            "coverUrl" : "http://juiceboxdotcom.com/wp-content/themes/mimbo2.2/images//twilight-movie-poster.jpg"
+        }
+    ],
+    "error" : null
+}
