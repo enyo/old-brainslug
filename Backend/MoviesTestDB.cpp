@@ -35,6 +35,9 @@ JSONObjectPtr MoviesTestDB::select(const std::string& fromSource) const {
 
 JSONObjectPtr MoviesTestDB::selectWhere(const std::string& fromSource, const std::pair<const std::string,const std::string>& query) const {
   JSONObjectPtr resultsDoc(new json::Object);
+  bool errorSet(false);
+  json::Array resultsContent;
+  (*resultsDoc)["content"] = json::Array();
   if (fromSource == "movies") {
     const std::string& key = query.first;
     const std::string& value = query.second;
@@ -45,18 +48,21 @@ JSONObjectPtr MoviesTestDB::selectWhere(const std::string& fromSource, const std
       for (; movieIt!=end; ++movieIt) {
 	const json::Object& movie = *movieIt;
 	const json::String& movieValue = movie[key];
-	if (movieValue == value) {
-	  (*resultsDoc)["content"] = movie;
-	  (*resultsDoc)["error"] = json::Null();
-	  break;
-	}
+	if (movieValue == value)
+	  resultsContent.Insert(movie);
       }
     } catch (const json::Exception& e) {
       // probably the key is not part of the movie object
       (*resultsDoc)["error"] = json::String(e.what());
+      errorSet = true;
     }
-  } else
+  } else {
     (*resultsDoc)["error"] = json::String(std::string("unrecognized db source: ") + fromSource);
+    errorSet = true;
+  }
+  (*resultsDoc)["content"] = resultsContent;
+  if (!errorSet)
+    (*resultsDoc)["error"] = json::Null();
   return resultsDoc;
 }
 
