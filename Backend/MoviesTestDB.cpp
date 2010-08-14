@@ -28,7 +28,7 @@ JSONObjectPtr MoviesTestDB::select(const std::string& fromSource) const {
     return _doc;
   else {
     JSONObjectPtr resultsDoc(new json::Object);
-    (*resultsDoc)["error"] = json::String(std::string("unrecognized db source") + fromSource);
+    (*resultsDoc)["error"] = json::String(std::string("unrecognized db source: ") + fromSource);
     return resultsDoc;
   }
 }
@@ -56,7 +56,7 @@ JSONObjectPtr MoviesTestDB::selectWhere(const std::string& fromSource, const std
       (*resultsDoc)["error"] = json::String(e.what());
     }
   } else
-    (*resultsDoc)["error"] = json::String(std::string("unrecognized db source") + fromSource);
+    (*resultsDoc)["error"] = json::String(std::string("unrecognized db source: ") + fromSource);
   return resultsDoc;
 }
 
