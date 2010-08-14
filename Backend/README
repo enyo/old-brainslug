@@ -1,1 +1,7 @@
 This is the backend of the media center. It is responsible for communicating with the scrape server and the frontend, as well as caching the server data.
+
+Dependencies:
+
+boost (tested with 1.43)
+cajun (located in Contrib)
+pion-net
