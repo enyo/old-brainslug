@@ -1,8 +1,18 @@
 #include "TestDB.h"
+#include <fstream>
 
 TestDB::TestDB(const std::string& source, const bool createDoc)
   : _doc(createDoc ? new json::Object : 0)
-  , _source(source) {}
+  , _source(source) {
+  if (createDoc && !source.empty()) {
+    // try to load a doc with the same name as the source
+    std::ifstream sourceStream;
+    sourceStream.open((source + ".json").c_str(), std::ifstream::in);
+    if (sourceStream.is_open()) {
+      json::Reader::Read(*_doc,sourceStream);
+    }
+  }
+}
 
 JSONObjectPtr TestDB::doc() const {
   return _doc;
