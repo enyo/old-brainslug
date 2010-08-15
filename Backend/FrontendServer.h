@@ -1,7 +1,8 @@
 #pragma once
 #include "MoviesResourceHandler.h"
-#include "DB.h"
 #include "TVShowsResourceHandler.h"
+#include "SeasonsResourceHandler.h"
+#include "DB.h"
 
 struct Options;
 
@@ -17,4 +18,6 @@ private:
   MoviesResourceHandler _mh;
   const DBPtr _tvshowsTestDB;
   TVShowsResourceHandler _tvh;
+  const DBPtr _seasonsTestDB;
+  SeasonsResourceHandler _sh;
 };

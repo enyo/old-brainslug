@@ -2,6 +2,7 @@
 #include "Options.h"
 #include "MoviesTestDB.h"
 #include "TVShowsTestDB.h"
+#include "SeasonsTestDB.h"
 #include <pion/net/HTTPResponseWriter.hpp>
 #include <pion/net/HTTPTypes.hpp>
 #include <boost/bind.hpp>
@@ -16,6 +17,8 @@ FrontendServer::FrontendServer(const Options& o)
   , _mh(_moviesTestDB)
   , _tvshowsTestDB(new TVShowsTestDB)
   , _tvh(_tvshowsTestDB)
+  , _seasonsTestDB(new SeasonsTestDB)
+  , _sh(_seasonsTestDB)
 {
   _httpServer.setNotFoundHandler(
 				 boost::bind(&FrontendServer::handleNotFound, this, _1, _2));
@@ -25,6 +28,9 @@ FrontendServer::FrontendServer(const Options& o)
   _httpServer.addResource(
 			  "/tvshows",
 			  boost::bind(&TVShowsResourceHandler::handle, &_tvh, _1, _2));
+  _httpServer.addResource(
+			  "/seasons",
+			  boost::bind(&SeasonsResourceHandler::handle, &_sh, _1, _2));
 }
 
 void FrontendServer::run() {

@@ -73,3 +73,6 @@ void ResourceHandler::findByID(pion::net::HTTPRequestPtr& request, pion::net::TC
   }
 }
 
+const std::string& ResourceHandler::source() const {
+  return _source;
+}
