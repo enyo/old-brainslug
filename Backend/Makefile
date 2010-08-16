@@ -1,8 +1,8 @@
 # a really lazy build script
 CFLAGS = -Wall -g -I$(BOOST_ROOT)/include -I../Contrib/cajun
 LDFLAGS = -L$(BOOST_ROOT)/lib -lboost_system -lboost_program_options -lpion-net -lpion-common -lboost_thread-mt -lssl -lcrypto 
-OBJECTS =	main.o \
-	 	FrontendServer.o \
+BRAINSLUGLIB = libbrainslug.a
+LIBOBJECTS = 	FrontendServer.o \
 		MoviesResourceHandler.o \
 		TVShowsResourceHandler.o \
 		MoviesTestDB.o \
@@ -11,12 +11,21 @@ OBJECTS =	main.o \
 		TestDB.o \
 		SeasonsTestDB.o \
 		SeasonsResourceHandler.o
+CMDAPPOBJECTS =	main.o
+CMDAPP = brainslug-backend
+RM = rm
+CXX = g++
+AR = ar
+ARFLAGS = rcs
 
-brainslug-backend : $(OBJECTS)
-	g++ $(LDFLAGS) $(OBJECTS) -o brainslug-backend
+$(CMDAPP) : $(BRAINSLUGLIB) $(CMDAPPOBJECTS)
+	$(CXX) $(LDFLAGS) $(BRAINSLUGLIB) $(CMDAPPOBJECTS) -o $(CMDAPP)
+
+$(BRAINSLUGLIB) : $(LIBOBJECTS)
+	$(AR) $(ARFLAGS) $(BRAINSLUGLIB) $(LIBOBJECTS)
 
 %.o : %.cpp
-	g++ $(CFLAGS) -c $<
+	$(CXX) $(CFLAGS) -c $<
 
 clean :
-	rm *.o
+	$(RM) *.o $(BRAINSLUGLIB) $(CMDAPP)
