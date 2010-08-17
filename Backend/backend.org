@@ -23,3 +23,5 @@
 *** No clue yet, but since the server hasn't even been started, this isn't a pressing issue.
 ** TODO Store the cached scrape data in some kind of model :model:
 *** SQLite backend? A real database?
+** TODO Better configure/make scripts for detecting missing dependencies like Boost 1.43 and checking if pion-net and cajun are
+        already installed
