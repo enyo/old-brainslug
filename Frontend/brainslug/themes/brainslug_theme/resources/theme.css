@@ -1,19 +1,22 @@
+.sc-main.video-playback { background: black; }
+
 .sc-main {
 background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#dddddd), to(#bbbbbb));
 opacity: 1;
-z-index: 100;
+z-index: 10;
 -webkit-transition: opacity 0.5s ease-out, z-index 0.5s ease-out;
 }
-.sc-main.inactive {
-opacity: 0;
-z-index: 1;
-}
+.sc-main.inactive { opacity: 0; }
 
 .sc-main.movies .movie.sel {
 -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
 background: rgba(255, 255, 255, 0.2);
 }
 
+.sc-main.home {
+z-index: 100;
+-webkit-transition: opacity 0.5s ease-out, z-index 0.5s ease-out;
+}
 .sc-main.home .main-menu { border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 .sc-main.home .main-menu .menu-button label {
 font-size: 40px;
@@ -28,6 +31,10 @@ color: rgba(255, 255, 255, 0.2);
 .sc-main.home .main-menu .menu-button.focus label {
 font-size: 50px;
 color: #ffffff;
+}
+.sc-main.inactive {
+opacity: 0;
+z-index: 9;
 }
 
 body {

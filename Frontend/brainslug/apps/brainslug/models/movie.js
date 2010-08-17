@@ -23,7 +23,11 @@ Brainslug.Movie = SC.Record.extend(
 
   name: SC.Record.attr(String, { isRequired: YES }),
 
-  coverUrl: SC.Record.attr(String, { isRequired: YES })
+  coverUrl: SC.Record.attr(String, { isRequired: YES }),
+
+  sources: SC.Record.toMany("Brainslug.MovieSource", {
+    inverse: "movie", isMaster: YES
+  })
 
 }) ;
 

@@ -23,6 +23,10 @@ Brainslug.MOVIES = SC.Responder.create({
   },
 
   willLoseFirstResponder: function() {
+  },
+
+  playMovie: function() {
+    Brainslug.videoPlayback.start(Brainslug.moviesController.get('selection').firstObject().get('sources').firstObject().get('url'));
   }
 
 });
